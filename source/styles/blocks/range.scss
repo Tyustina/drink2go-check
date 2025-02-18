@@ -1,0 +1,55 @@
+@use "../common/variables.scss" as v;
+@use "../common/mixin.scss" as m;
+.range {
+  margin-top: 10px;
+}
+.range__scale {
+  width: 280px;
+  height: 2px;
+  background-color: v.$light-grey;
+}
+
+.range__bar {
+  height: 4px;
+  background-color: v.$primary-lighter
+}
+
+.range__toggle {
+  position: relative;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-color: v.$base-white;
+  border-radius: 50%;
+  border: 2px solid v.$primary-lighter;
+}
+
+.range__toggle--min {
+  top: -10px;
+}
+
+.range__toggle--max {
+  top: -10px;
+  left: 200px;
+}
+
+.range__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+.range__input {
+  border: 2px solid v.$primary-lighter;
+  border-radius: 4px;
+  padding: 8px 10px;
+  width: 118px;
+  height: 40px;
+}
+.range__line {
+  position: relative;
+  content: "";
+  width: 8px;
+  height: 2px;
+  background-color: v.$base-grey;
+  margin: auto 0;
+}

@@ -1,0 +1,154 @@
+@use "../common/variables.scss" as v;
+@use "../common/mixin.scss" as m;
+
+.new {
+  position: relative;
+
+}
+.new__list {
+  @include m.list-reset;
+}
+
+.new__item {
+  display: none;
+  @include m.container;
+
+}
+
+.new__item--action {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  align-items: center;
+  @include m.tablet {
+    flex-direction: column-reverse;
+    padding-bottom: 300px;
+    padding-top: 59px;
+  }
+  @include m.desktop {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: max-content 1fr;
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+}
+
+.new__item--decaf {
+  background-color: v.$flat-white;
+}
+
+.new__item--lavender {
+  background-color: v.$lavender-latte;
+}
+
+.new__item--espresso {
+  background-color: v.$espresso;
+}
+
+.new__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include m.desktop {
+    align-items: flex-start;
+    margin-top: 150px;
+  }
+}
+
+.new__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 133%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+  @include m.tablet {
+    font-size: 56px;
+    line-height: 143%;
+    margin-bottom: 16px;
+  }
+}
+
+.new__desc {
+  @include m.desktop {
+    text-align: left;
+
+  }
+}
+.new__price-wrapper {
+  display: flex;
+  gap: 22px;
+  margin-top: 20px;
+  @include m.tablet {
+    gap: 21px;
+    margin-top: 40px;
+  }
+}
+
+.new__price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  color: v.$base-black;
+  margin: 0;
+  margin-top: 2px;
+  @include m.tablet {
+    padding-top: 4px;
+  }
+}
+
+.new__price--delete {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  text-decoration: line-through;
+  color: v.$base-primary;
+}
+
+.new__img {
+  width: 280px;
+  height: 280px;
+
+  @include m.tablet {
+    position: absolute;
+    left: 19%;
+    bottom: -29%;
+    width: 476px;
+    height: 476px;
+  }
+
+  @include m.desktop {
+    position: static;
+    width: 600px;
+    height: 600px;
+    margin-left: 65px;
+  }
+}
+
+.new__toggles {
+  display: none;
+  @include m.desktop {
+    @include m.list-reset;
+    position: absolute;
+    display: flex;
+    gap: 8px;
+    bottom: 70px;
+    left: 43%;
+  }
+}
+
+.new__toggle {
+  content: "";
+  width: 62px;
+  height: 4px;
+  background-color: v.$base-white;
+
+}
+
+.new__toggle--action {
+  background-color: v.$base-primary;
+}

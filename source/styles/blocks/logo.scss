@@ -1,0 +1,20 @@
+@use "../common/variables.scss" as v;
+@use "../common/mixin.scss" as m;
+
+.logo {
+  @include m.onli-mobile {
+    padding-left: 20px;
+  }
+}
+
+.logo__text {
+  display: none;
+
+  @include m.desktop {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    letter-spacing: 0.06em;
+  }
+}

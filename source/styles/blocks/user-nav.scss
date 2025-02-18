@@ -1,0 +1,44 @@
+@use "../common/mixin.scss" as m;
+@use "../common/variables.scss" as v;
+
+.user-nav {
+  display: flex;
+  padding: 22px;
+}
+
+.user-nav__text {
+  display: none;
+
+  @include m.desktop {
+    display: block;
+  }
+}
+
+.user-nav__button {
+  @include m.desktop {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.user-nav--account::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+  background-color: v.$base-black;
+  mask-image: url("../../icons/user.svg");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
+.user-nav--basket::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+  background-color: v.$base-black;
+  mask-image: url("../../icons/basket.svg");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}

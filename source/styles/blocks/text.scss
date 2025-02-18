@@ -1,0 +1,20 @@
+@use "../common/variables.scss" as v;
+@use "../common/mixin.scss" as m;
+
+.text {
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+text-align: center;
+margin: 0;
+@include m.tablet {
+  font-size: 20px;
+  line-height: 160%;
+}
+}
+
+.text__br {
+  @include m.onli-mobile {
+    display: none;
+  }
+}

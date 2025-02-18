@@ -1,0 +1,14 @@
+@use "../common/variables.scss" as v;
+@use "../common/mixin.scss" as m;
+
+.title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: v.$base-primary;
+  margin: 0;
+  margin-bottom: 4px;
+}

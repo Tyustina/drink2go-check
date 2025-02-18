@@ -1,0 +1,16 @@
+@use "../common/variables.scss" as v;
+@use "../common/mixin.scss" as m;
+
+.catalog {
+  @include m.container;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.catalog__list {
+  @include m.list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 87px;
+}

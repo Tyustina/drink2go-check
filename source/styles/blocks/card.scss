@@ -1,0 +1,62 @@
+@use "../common/variables.scss" as v;
+@use "../common/mixin.scss" as m;
+
+.card {
+  display: grid;
+ grid-template-rows: max-content 1fr;
+ justify-items: center;
+ gap: 20px;
+  padding: 40px 20px 20px 20px;
+  background-color: v.$base-white;
+  align-items: center;
+  border:1px solid red;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 178%;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.card__text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__text {
+  text-align: left;
+}
+
+.card__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.card__price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  margin: 0;
+}
+
+.card__button {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+}
+
+.card__button::before {
+  content: "";
+  width: 20px;
+  height: 16px;
+  display: block;
+  background: v.$base-white;
+  mask-image: url("../../icons/card-basket.svg");
+}

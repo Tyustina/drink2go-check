@@ -1,5 +1,31 @@
+@use "../common/variables.scss" as v;
+@use "../common/mixin.scss" as m;
+
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  @include m.tablet {
+    @include m.container;
+  }
+}
+
+.header__logo {
+  @include m.desktop{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  }
+}
+
+.header__user-nav  {
+  display: flex;
+  @include m.onli-mobile {
+    padding-right: 60px;
+  }
+  @include m.desktop {
+    gap: 22px;
+  }
 }

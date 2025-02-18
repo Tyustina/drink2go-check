@@ -1,0 +1,15 @@
+@use "../common/variables.scss" as v;
+@use "../common/mixin.scss" as m;
+
+.button {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: v.$base-white;
+  padding: 8px 20px;
+  background-color: v.$base-primary;
+  border: none;
+  border-radius: 4px;
+}

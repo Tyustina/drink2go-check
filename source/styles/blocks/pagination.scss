@@ -1,0 +1,58 @@
+@use "../common/variables.scss" as v;
+@use "../common/mixin.scss" as m;
+
+.pagination__button {
+  position: absolute;
+  @include m.list-reset;
+  width: 20px;
+  height: 100%;
+  top: 0;
+  border: none;
+  background-color: transparent;
+  @include m.tablet {
+    width: 80px;
+  }
+}
+
+.pagination__button--prev::before {
+  position: relative;
+  content:"";
+  width: 14px;
+  height: 14px;
+  display: block;
+  border: 2px solid v.$base-primary;
+  border-bottom: none;
+  border-right: 0;
+  top: 0;
+  left: 35%;
+  transform: rotate(-45deg);
+  @include m.tablet {
+    left: 46%;
+  }
+}
+
+.pagination__button--next::before {
+  position: relative;
+  content:"";
+  width: 14px;
+  height: 14px;
+  display: block;
+  border: 2px solid v.$base-primary;
+  border-bottom: none;
+  border-left: 0;
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+  @include m.tablet {
+    left: 36%;
+  }
+}
+
+.pagination__button--prev {
+  left: 0;
+
+}
+
+.pagination__button--next {
+  right: 0;
+}

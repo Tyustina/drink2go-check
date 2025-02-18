@@ -1,0 +1,187 @@
+@use "../common/variables.scss" as v;
+@use "../common/mixin.scss" as m;
+
+.featured {
+  @include m.container;
+  padding-top: 36px;
+  padding-bottom: 60px;
+
+  @include m.tablet {
+    padding-top: 214px;
+    padding-bottom: 96px;
+  }
+  @include m.desktop {
+    padding-top: 86px;
+    padding-bottom: 120px;
+  }
+}
+
+.featured__list {
+  @include m.list-reset;
+  display: grid;
+  row-gap: 41px;
+  margin-top: 45px;
+
+  @include m.tablet {
+    grid-template-columns: 340px 340px;
+    column-gap: 30px;
+    row-gap: 50px;
+    margin-top: 60px;
+  }
+
+  @include m.desktop {
+    grid-template-columns: 317px 317px 317px 317px;
+    column-gap: 30px;
+    justify-items: center;
+    margin-top: 100px;
+  }
+}
+
+.featured__item {
+  display: flex;
+  flex-direction: column;
+
+  @include m.tablet {
+    padding-left: 82px;
+  }
+
+  @include m.desktop {
+    padding-left: 0;
+  }
+}
+
+.featured__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 178%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 4px;
+
+  @include m.tablet {
+    text-align: left;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 10px;
+  }
+
+  @include m.desktop {
+    text-align: center;
+  }
+}
+
+.featured__desc {
+  @include m.tablet {
+    text-align: left;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  @include m.desktop {
+    text-align: center;
+  }
+}
+
+.featured__item--eco {
+  margin-top: 2px;
+}
+
+.featured__item--energy {
+  margin-top: 1px;
+}
+
+.featured__item--speed::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 52px;
+  height: 56px;
+  background-image: url("../../icons/speed.svg");
+  background-repeat: no-repeat;
+  top: -8%;
+  left: 41%;
+
+  @include m.tablet {
+    position: absolute;
+    left: 3%;
+    top: 3%;
+  }
+
+  @include m.desktop {
+    position: relative;
+    top: -35%;
+    left: 42%;
+  }
+}
+
+.featured__item--fit::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 52px;
+  height: 56px;
+  background-image: url("../../icons/fit.svg");
+  background-repeat: no-repeat;
+  top: -7%;
+  left: 41%;
+
+  @include m.tablet {
+    position: absolute;
+    left: 3%;
+    top: 3%;
+  }
+
+  @include m.desktop {
+    position: relative;
+    top: -13%;
+    left: 41%;
+  }
+}
+
+.featured__item--energy::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 52px;
+  height: 56px;
+  background-image: url("../../icons/energy.svg");
+  background-repeat: no-repeat;
+  top: -7%;
+  left: 41%;
+
+  @include m.tablet {
+    position: absolute;
+    left: 3%;
+    top: 3%;
+  }
+
+  @include m.desktop {
+    position: relative;
+    top: -13%;
+    left: 42%;
+  }
+}
+
+.featured__item--eco::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 52px;
+  height: 56px;
+  background-image: url("../../icons/eco.svg");
+  background-repeat: no-repeat;
+  top: -8%;
+  left: 41%;
+
+  @include m.tablet {
+    position: absolute;
+    left: 3%;
+    top: 3%;
+  }
+
+  @include m.desktop {
+    position: relative;
+    top: -15%;
+    left: 42%;
+  }
+}

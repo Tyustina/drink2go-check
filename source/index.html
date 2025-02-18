@@ -1,17 +1,359 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-semibold.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-bold.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-extrabold.woff2" type="font/woff2" as="font">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header" data-test="header">
+    <div class="header__logo">
+      <div class="logo">
+        <picture>
+          <source media="(min-width:1440px)" srcset="./images/logo-large.svg" width="170" height="36">
+          <source media="(min-width:768px)" srcset="./images/logo-medium.svg" width="82" height="36">
+          <img src="./images/logo-small.svg" width="32" height="36" alt="Логотип Drink2Go.">
+        </picture>
+      </div>
+      <p class="logo__text">Интернет-магазин<br>кофейных напитков</p>
+    </div>
+    <div class="header__nav nav nav--closed">
+      <div class="nav__toggle-wrapper">
+        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item nav__item--action"><a class="nav__link nav__text" href="#">Главная</a> </li>
+        <li class="nav__item"><a class="nav__link nav__text" href="#">Каталог</a> </li>
+        <li class="nav__item"><a class="nav__link nav__text" href="#">Доставка</a> </li>
+        <li class="nav__item"><a class="nav__link nav__text" href="#">О нас</a> </li>
+      </ul>
+    </div>
+    <div class="header__user-nav">
+      <div class="user-nav">
+        <a class="user-nav__button user-nav--account"><span class="user-nav__text nav__text">Войти</span></a>
+      </div>
+      <div class="user-nav">
+        <a class="user-nav__button user-nav--basket"><span class="user-nav__text nav__text">Корзина</span></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
+    <section class="new">
+      <h2 class="visually-hidden">Новинки.</h2>
+      <ul class="new__list">
+        <li class="new__item new__item--decaf new__item--action">
+          <picture>
+            <source type="image/webp" media="(min-width:1440px)"
+              srcset="./images/decaf-desk.webp 1x, ./images/decaf-desk@2x.webp 2x">
+            <source type="image/webp" media="(min-width:768px)"
+              srcset="./img/featured-tablet.webp 1x, ./images/decaf-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./images/decaf-mobile.webp 1x, ./images/decaf-mobile@2x.webp 2x">
+            <source media="(min-width:1440px)" srcset="./images/decaf-desk.jpg 1x, ./images/decaf-desk@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="./images/decaf-tablet 1x, ./images/decaf-tablet@2x.jpg 2x">
+            <img class="new__img" src="./images/decaf-mobile.png" srcset="./images/decaf-mobile@2x.png"
+              alt="Декаф Флэт Уайт.">
+          </picture>
+          </picture>
+          <div class="new__text-wrapper">
+            <p class="title">Новинка!</p>
+            <h3 class="new__title">Декаф Флэт Уайт</h3>
+            <p class="new__desc text">Свежесваренный кофе без кофеина из Эфиопии<br class="text__br">
+              с натуральным фермерским молоком — то, что нужно<br class="text__br">
+              для расслабления после тяжёлого рабочего дня</p>
+            <div class="new__price-wrapper">
+              <p class="new__price"><span class="new__price--delete">295&#8381;</span> 225&#8381;</p>
+              <button class="new__button button" type="button">Заказать</button>
+            </div>
+          </div>
+        </li>
+        <li class="new__item new__item--lavender">
+          <picture>
+            <source type="image/webp" media="(min-width:1440px)"
+              srcset="./images/lavender-desk.webp 1x, ./images/lavender-desk@2x.webp 2x">
+            <source type="image/webp" media="(min-width:768px)"
+              srcset="./img/lavender-tab.webp 1x, ./images/lavender-tab@2x.webp 2x">
+            <source type="image/webp" srcset="./images/lavender-mob.webp 1x, ./images/lavender-mob@2x.webp 2x">
+
+            <source media="(min-width:1440px)" srcset="./images/lavender-desk.jpg 1x, ./images/lavender-desk@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="./images/lavender-tab 1x, ./images/lavender-tab@2x.jpg 2x">
+            <img class="new__img" src="./images/lavender-mob.png" srcset="./images/lavender-mob@2x.png"
+              alt="Лавандовый Латте.">
+          </picture>
+          <div class="new__text-wrapper">
+            <p class="title">Новинка!</p>
+            <h3 class="new__title">Лавандовый Латте</h3>
+            <p class="new__desc text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым
+              сиропом унесёт вас прямо на вершину Радужных гор</p>
+            <div class="new__price-wrapper">
+              <p class="new__price"><del>285&#8381;</del> 265&#8381;</p>
+              <button class="new__button" type="button">Заказать</button>
+            </div>
+          </div>
+        </li>
+        <li class="new__item new__item--espresso">
+          <picture>
+            <source type="image/webp" media="(min-width:1440px)"
+              srcset="./images/espresso-desk.webp 1x, ./images/espresso-desk@2x.webp 2x">
+            <source type="image/webp" media="(min-width:768px)"
+              srcset="./img/espresso-tab.webp 1x, ./images/espresso-tab@2x.webp 2x">
+            <source type="image/webp" srcset="./images/espresso-mob.webp 1x, ./images/espresso-mob@2x.webp 2x">
+
+            <source media="(min-width:1440px)" srcset="./images/espresso-desk.jpg 1x, ./images/espresso-desk@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="./images/espresso-tab 1x, ./images/espresso-tab@2x.jpg 2x">
+            <img class="new__img" src="./images/espresso-mob.png" srcset="./images/espresso-mob@2x.png"
+              alt="Лавандовый Латте.">
+          </picture>
+          <div class="new__text-wrapper">
+            <p class="title">Новинка!</p>
+            <h3 class="new__title">Тройной Эспрессо</h3>
+            <p class="new__desc text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из
+              Колумбии покажет вам, что такое настоящая бодрость</p>
+            <div class="new__price-wrapper">
+              <p class="new__price"><del>295&#8381;</del> 225&#8381;</p>
+              <button class="new__button" type="button">Заказать</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="new__pagination pagination">
+        <button class="pagination__button pagination__button--prev"><span class="visually-hidden">Предыдущий
+            слайд.</span></button>
+        <button class="pagination__button pagination__button--next"><span class="visually-hidden">Следующий
+            слайд.</span></button>
+      </ul>
+      <ul class="new__toggles">
+        <li class="new__toggle new__toggle--action"><span class="visually-hidden">1</span></li>
+        <li class="new__toggle"><span class="visually-hidden">2</span></li>
+        <li class="new__toggle"><span class="visually-hidden">3</span></li>
+      </ul>
+    </section>
+    <section class="featured">
+      <h2 class="title">Преимущества</h2>
+      <p class="featured__subtitle subtittle">Главные причины выбрать Drink2Go</p>
+      <ul class="featured__list">
+        <li class="featured__item featured__item--speed">
+          <h3 class="featured__heading">Скорость</h3>
+          <p class="featured__desc text">Готовый напиток всегда под рукой — просто открой банку</p>
+        </li>
+        <li class="featured__item featured__item--fit">
+          <h3 class="featured__heading">Удобство</h3>
+          <p class="featured__desc text">Легко помещается и в карман,<br>
+            и в маленькую сумочку</p>
+        </li>
+        <li class="featured__item featured__item--energy">
+          <h3 class="featured__heading">Бодрость</h3>
+          <p class="featured__desc text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+        </li>
+        <li class="featured__item featured__item--eco">
+          <h3 class="featured__heading">Экологичность</h3>
+          <p class="featured__desc text">Вся упаковка сделана<br>
+            из перерабатываемых материалов</p>
+        </li>
+      </ul>
+    </section>
+    <section class="catalog">
+      <h2 class="title">Каталог</h2>
+      <p class="subtittle">Каталог кофейных напитков</p>
+      <div class="catalog__wrapper">
+        <form class="form" action="#">
+          <fieldset class="form__group sorter">
+            <legend class="visually-hidden">Сортировка</legend>
+            <p class="form__title sorter__title">Сортировка</p>
+            <select class="form__sorter sorter__list" name="sorting">
+              <option class="sorter__text" value="popular">по умолчанию</option>
+              <option class="sorter__text" value="price">по цене</option>
+            </select>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__title">Цена</legend>
+            <div class="range">
+              <div class="range__scale">
+                <div class="range__bar" style="left:0px; width:241px">
+                  <button class="range__toggle range__toggle--min" type="button"></button>
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                  <button class="range__toggle range__toggle--max" type="button"></button>
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </div>
+              </div>
+            </div>
+            <div class="range__wrapper">
+              <label class="range__label"><input class="range__input" type="number" value="100" name="min-price">
+              </label>
+              <p class="range__line"></p>
+              <label class="rang__label"><input class="range__input" type="number" value="500" name="max-price">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__title">Наличие молока</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="control"><input class="control__input visually-hidden" type="radio" name="milk"
+                    value="nobody" checked>
+                  <span class="control__marker"></span>Неважно</label>
+              </li>
+              <li class="form__item">
+                <label class="control"><input class="control__input visually-hidden" type="radio" name="milk"
+                    value="regular">
+                  <span class="control__marker"></span>Только животное</label>
+              </li>
+              <li class="form__item">
+                <label class="control"><input class="control__input visually-hidden" type="radio" name="milk"
+                    value="plant">
+                  <span class="control__marker"></span>Только растительное</label>
+              </li>
+              <li class="form__item">
+                <label class="control"><input class="control__input visually-hidden" type="radio" name="milk"
+                    value="none" disabled>
+                  <span class="control__marker"></span>Без молока</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__title">Страна произрастания</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="control"><input class="control__input visually-hidden" type="checkbox" name="brazil"
+                    checked><span class="control__marker control__marker--checkbox"></span>Бразилия
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="control"><input class="control__input visually-hidden" type="checkbox" name="ethiopia">
+                  <span class="control__marker control__marker--checkbox"></span>Эфиопия
+                </label>
+              <li class="form__item">
+                <label class="control"><input class="control__input visually-hidden" type="checkbox" name="columbia">
+                  <span class="control__marker control__marker--checkbox"></span>Колумбия
+                </label>
+              <li class="form__item">
+                <label class="control"><input class="control__input visually-hidden" type="checkbox" name="costarica">
+                  <span class="control__marker control__marker--checkbox"></span>Коста-Рика
+                </label>
+              <li class="form__item">
+                <label class="control"><input class="control__input visually-hidden" type="checkbox" name="peru"
+                    disabled>
+                  <span class="control__marker control__marker--checkbox"></span>Перу
+                </label>
+            </ul>
+          </fieldset>
+          <div class="form__buttons">
+            <input class="form__button button form__button--submit" type="submit" value="Применить">
+            <input class="form__button button form__button--reset" type="reset" value="Сбросить">
+          </div>
+        </form>
+      <ul class="catalog__list">
+        <li class="catalog__item card">
+          <picture>
+            <source type="image/webp" srcset="./images/card-1.webp 1x, ./images/card-1@2x.webp 2x">
+            <img class="card__img" src="./images/card-1.png" srcset="./images/card-1@2x.png">
+          </picture>
+          <div class="card__text-wrapper">
+            <h3 class="card__title">Декаф Флэт Уайт</h3>
+            <p class=" card__text text">Кофе без кофеина из Эфиопии<br>
+              с натуральным фермерским молоком</p>
+            <div class="card__price-wrapper">
+              <p class="card__price">225&#8381;</p>
+              <button class="card__button button">В корзину</button>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item card">
+          <picture>
+            <source type="image/webp" srcset="./images/card-2.webp 1x, ./images/card-2@2x.webp 2x">
+            <img class="card__img" src="./images/card-2.png" srcset="./images/card-2@2x.png">
+          </picture>
+          <div class="card__text-wrapper">
+            <h3 class="card__title">Декаф Флэт Уайт</h3>
+            <p class=" card__text text">Кофе без кофеина из Эфиопии<br>
+              с натуральным фермерским молоком</p>
+            <div class="card__price-wrapper">
+              <p class="card__price">225&#8381;</p>
+              <button class="card__button button">В корзину</button>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item card">
+          <picture>
+            <source type="image/webp" srcset="./images/card-3.webp 1x, ./images/card-3@2x.webp 2x">
+            <img class="card__img" src="./images/card-3.png" srcset="./images/card-3@2x.png">
+          </picture>
+          <div class="card__text-wrapper">
+            <h3 class="card__title">Декаф Флэт Уайт</h3>
+            <p class=" card__text text">Кофе без кофеина из Эфиопии<br>
+              с натуральным фермерским молоком</p>
+            <div class="card__price-wrapper">
+              <p class="card__price">225&#8381;</p>
+              <button class="card__button button">В корзину</button>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item card">
+          <picture>
+            <source type="image/webp" srcset="./images/card-4.webp 1x, ./images/card-4@2x.webp 2x">
+            <img class="card__img" src="./images/card-4.png" srcset="./images/card-4@2x.png">
+          </picture>
+          <div class="card__text-wrapper">
+            <h3 class="card__title">Декаф Флэт Уайт</h3>
+            <p class=" card__text text">Кофе без кофеина из Эфиопии<br>
+              с натуральным фермерским молоком</p>
+            <div class="card__price-wrapper">
+              <p class="card__price">225&#8381;</p>
+              <button class="card__button button">В корзину</button>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item card">
+          <picture>
+            <source type="image/webp" srcset="./images/card-5.webp 1x, ./images/card-5@2x.webp 2x">
+            <img class="card__img" src="./images/card-5.png" srcset="./images/card-5@2x.png">
+          </picture>
+          <div class="card__text-wrapper">
+            <h3 class="card__title">Декаф Флэт Уайт</h3>
+            <p class=" card__text text">Кофе без кофеина из Эфиопии<br>
+              с натуральным фермерским молоком</p>
+            <div class="card__price-wrapper">
+              <p class="card__price">225&#8381;</p>
+              <button class="card__button button">В корзину</button>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item card">
+          <picture>
+            <source type="image/webp" srcset="./images/card-6.webp 1x, ./images/card-6@2x.webp 2x">
+            <img class="card__img" src="./images/card-6.png" srcset="./images/card-6@2x.png">
+          </picture>
+          <div class="card__text-wrapper">
+            <h3 class="card__title">Декаф Флэт Уайт</h3>
+            <p class=" card__text text">Кофе без кофеина из Эфиопии<br>
+              с натуральным фермерским молоком</p>
+            <div class="card__price-wrapper">
+              <p class="card__price">225&#8381;</p>
+              <button class="card__button button">В корзину</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul class="catalog__numeration numeration">
+      <li class="numeration__item numeration__item--perv"><span class="numeration__text">Назад</span></li>
+      <li class="numeration__item">1</li>
+      <li class="numeration__item">2</li>
+      <li class="numeration__item">3</li>
+      <li class="numeration__item numeration__item--next"><span class="numeration__text">Вперед</span></li>
+    </ul>
+    </section>
+  </main>
+</body>
+
 </html>

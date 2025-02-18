@@ -1,0 +1,26 @@
+@use "../common/variables.scss" as v;
+@use "../common/mixin.scss" as m;
+
+.sorter {
+  position: absolute;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  bottom: -68px;
+  left: 2px;
+}
+
+.sorter__list {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: right;
+  border: none;
+  background-color: transparent;
+  color: v.$base-primary;
+  margin: 0;
+}
+
+.sorter__title {
+  margin: 0;
+}
