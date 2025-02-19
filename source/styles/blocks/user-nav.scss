@@ -8,6 +8,13 @@
 
 .user-nav__text {
   display: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: v.$base-black;
 
   @include m.desktop {
     display: block;
@@ -21,7 +28,7 @@
   }
 }
 
-.user-nav--account::before {
+.user-nav__button--account::before {
   content: "";
   width: 16px;
   height: 16px;
@@ -32,7 +39,7 @@
   mask-size: cover;
 }
 
-.user-nav--basket::before {
+.user-nav__button--basket::before {
   content: "";
   width: 16px;
   height: 16px;

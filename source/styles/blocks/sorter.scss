@@ -8,6 +8,15 @@
   margin: 0;
   bottom: -68px;
   left: 2px;
+
+  @include m.tablet {
+    left: 60%;
+  }
+
+  @include m.desktop {
+    bottom: 95%;
+    left: 380%;
+  }
 }
 
 .sorter__list {
@@ -23,4 +32,11 @@
 
 .sorter__title {
   margin: 0;
+}
+
+.sorter__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: right;
 }

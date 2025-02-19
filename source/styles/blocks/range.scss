@@ -1,8 +1,10 @@
 @use "../common/variables.scss" as v;
 @use "../common/mixin.scss" as m;
+
 .range {
   margin-top: 10px;
 }
+
 .range__scale {
   width: 280px;
   height: 2px;
@@ -11,7 +13,7 @@
 
 .range__bar {
   height: 4px;
-  background-color: v.$primary-lighter
+  background-color: v.$primary-lighter;
 }
 
 .range__toggle {
@@ -30,7 +32,7 @@
 
 .range__toggle--max {
   top: -10px;
-  left: 200px;
+  left: 206px;
 }
 
 .range__wrapper {
@@ -38,18 +40,33 @@
   justify-content: space-between;
   margin-top: 36px;
 }
+
 .range__input {
+  font-family: inherit;
   border: 2px solid v.$primary-lighter;
   border-radius: 4px;
   padding: 8px 10px;
   width: 118px;
   height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
 }
+
+.range__input--min {
+  color: v.$base-grey;
+}
+
+.range__input--max {
+  color: v.$base-black;
+}
+
 .range__line {
   position: relative;
   content: "";
   width: 8px;
   height: 2px;
   background-color: v.$base-grey;
-  margin: auto 0;
+  margin: auto 16px auto 0;
 }

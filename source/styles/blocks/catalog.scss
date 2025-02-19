@@ -3,14 +3,35 @@
 
 .catalog {
   @include m.container;
+  display: flex;
+  flex-direction: column;
   padding-top: 50px;
   padding-bottom: 40px;
 }
 
 .catalog__list {
   @include m.list-reset;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+  display: grid;
+  gap: 20px;
   margin-top: 87px;
+
+  @include m.tablet {
+    grid-template-columns: max-content max-content;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include m.desktop {
+    grid-template-columns: max-content max-content max-content;
+  }
+}
+
+.catalog__wrapper {
+  display: grid;
+
+  @include m.desktop {
+    grid-template-columns: max-content 1fr;
+    column-gap: 30px;
+  }
 }

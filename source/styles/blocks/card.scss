@@ -3,13 +3,13 @@
 
 .card {
   display: grid;
- grid-template-rows: max-content 1fr;
- justify-items: center;
- gap: 20px;
-  padding: 40px 20px 20px 20px;
+  grid-template-rows: max-content 1fr;
+  gap: 20px;
+  padding: 40px 20px 20px;
   background-color: v.$base-white;
-  align-items: center;
-  border:1px solid red;
+  border-radius: 4px;
+  place-items: center center;
+  margin: 0 auto;
 }
 
 .card__title {
@@ -27,6 +27,11 @@
 
 .card__text {
   text-align: left;
+
+  @include m.tablet {
+    font-size: 14px;
+    line-height: 143%;
+  }
 }
 
 .card__price-wrapper {

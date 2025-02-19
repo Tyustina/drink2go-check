@@ -34,7 +34,6 @@
   @include m.desktop {
     gap: 22px;
   }
-
 }
 
 .nav__item {
@@ -48,8 +47,8 @@
 }
 
 .nav__item--action {
-  @include m.tablet{
-  border-bottom: 1px solid v.$base-primary;
+  @include m.tablet {
+    border-bottom: 1px solid v.$base-primary;
   }
 }
 

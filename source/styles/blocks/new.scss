@@ -3,16 +3,15 @@
 
 .new {
   position: relative;
-
 }
+
 .new__list {
   @include m.list-reset;
 }
 
 .new__item {
-  display: none;
   @include m.container;
-
+  display: none;
 }
 
 .new__item--action {
@@ -22,11 +21,13 @@
   padding-top: 20px;
   padding-bottom: 60px;
   align-items: center;
+
   @include m.tablet {
     flex-direction: column-reverse;
     padding-bottom: 300px;
     padding-top: 59px;
   }
+
   @include m.desktop {
     display: grid;
     gap: 30px;
@@ -52,6 +53,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @include m.desktop {
     align-items: flex-start;
     margin-top: 150px;
@@ -66,6 +68,7 @@
   text-align: center;
   margin: 0;
   margin-bottom: 10px;
+
   @include m.tablet {
     font-size: 56px;
     line-height: 143%;
@@ -76,13 +79,14 @@
 .new__desc {
   @include m.desktop {
     text-align: left;
-
   }
 }
+
 .new__price-wrapper {
   display: flex;
   gap: 22px;
   margin-top: 20px;
+
   @include m.tablet {
     gap: 21px;
     margin-top: 40px;
@@ -96,12 +100,13 @@
   color: v.$base-black;
   margin: 0;
   margin-top: 2px;
+
   @include m.tablet {
     padding-top: 4px;
   }
 }
 
-.new__price--delete {
+.new__price-delete {
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
@@ -131,6 +136,7 @@
 
 .new__toggles {
   display: none;
+
   @include m.desktop {
     @include m.list-reset;
     position: absolute;
@@ -146,7 +152,6 @@
   width: 62px;
   height: 4px;
   background-color: v.$base-white;
-
 }
 
 .new__toggle--action {

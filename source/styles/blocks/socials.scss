@@ -1,0 +1,39 @@
+@use "../common/variables.scss" as v;
+@use "../common/mixin.scss" as m;
+
+.socials__list {
+  @include m.list-reset;
+  display: flex;
+  gap: 20px;
+}
+
+.socials__item {
+  padding: 10px;
+}
+
+.socials__link--vk::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: v.$base-grey;
+  mask-image: url("../../icons/vk.svg");
+}
+
+.socials__link--pinterest::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: v.$base-grey;
+  mask-image: url("../../icons/pinterest.svg");
+}
+
+.socials__link--ok::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: v.$base-grey;
+  mask-image: url("../../icons/vk.svg");
+}

@@ -3,6 +3,7 @@
 
 .featured {
   @include m.container;
+  display: grid;
   padding-top: 36px;
   padding-bottom: 60px;
 
@@ -10,6 +11,7 @@
     padding-top: 214px;
     padding-bottom: 96px;
   }
+
   @include m.desktop {
     padding-top: 86px;
     padding-bottom: 120px;
@@ -21,11 +23,12 @@
   display: grid;
   row-gap: 41px;
   margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include m.tablet {
     grid-template-columns: 340px 340px;
-    column-gap: 30px;
-    row-gap: 50px;
+    gap: 50px 30px;
     margin-top: 60px;
   }
 
@@ -42,6 +45,7 @@
   flex-direction: column;
 
   @include m.tablet {
+    position: relative;
     padding-left: 82px;
   }
 

@@ -1,0 +1,38 @@
+@use "../common/variables.scss" as v;
+@use "../common/mixin.scss" as m;
+
+.developed {
+  @include m.container;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.developed__link {
+  display: flex;
+  gap: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  text-align: right;
+  color: v.$base-grey;
+  text-decoration: none;
+}
+
+.developed__link::after {
+  content: "";
+  width: 12px;
+  height: 16px;
+  display: block;
+  background: v.$base-grey;
+  mask-image: url("../../icons/html-academy.svg");
+}
+
+.developed__text {
+  display: flex;
+  gap: 3px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: v.$base-grey;
+}

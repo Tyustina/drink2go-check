@@ -1,0 +1,33 @@
+@use "../common/variables.scss" as v;
+@use "../common/mixin.scss" as m;
+
+.map {
+  display: flex;
+}
+
+.map__img {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map__img::before {
+  position: absolute;
+  content: "";
+  width: 38px;
+  height: 50px;
+  display: block;
+  background-image: url("../../icons/map-pin.svg");
+  top: 185px;
+  left: 156px;
+
+  @include m.tablet {
+    top: 215px;
+    left: 380px;
+  }
+
+  @include m.desktop {
+    top: 245px;
+    left: 716px;
+  }
+}
