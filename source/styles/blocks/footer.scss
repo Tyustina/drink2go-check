@@ -96,3 +96,12 @@
     padding-top: 21px;
   }
 }
+
+.footer__link:hover,
+.footer__link:focus {
+  color: v.$primary-lighter;
+}
+
+.footer__link:active {
+  color: v.$primary-darker;
+}

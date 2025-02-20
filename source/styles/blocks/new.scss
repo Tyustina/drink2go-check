@@ -157,3 +157,16 @@
 .new__toggle--action {
   background-color: v.$base-primary;
 }
+
+.new__toggle:hover,
+.new__toggle:focus {
+  background-color: v.$primary-opacity-25;
+}
+
+.new__toggle:active {
+  background-color: v.$base-primary;
+}
+/*test*/
+.new__item--action:has(.new__item--decaf) .new {
+  background-color: red;
+}

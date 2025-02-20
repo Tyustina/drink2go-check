@@ -30,6 +30,7 @@
   align-items: center;
   min-width: 40px;
   min-height: 40px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
@@ -38,20 +39,6 @@
   background-color: v.$base-white;
   border: none;
   border-radius: 4px;
-}
-.numeration__button:hover,
-.numeration__button:focus {
-  background-color: v.$primary-lighter;
-  color: v.$base-white;
-}
-
-.numeration__button:active {
-  background-color: v.$primary-darker;
-}
-
-.numeration__button:disabled {
-  background-color: v.$light-grey;
-  color: v.$base-black;
 }
 
 .numeration__button--next::after {
@@ -75,4 +62,28 @@
     background: v.$base-primary;
     mask-image: url("../../icons/arrow.svg");
   }
+}
+.numeration__button--activ {
+  font-weight: 600;
+  color: v.$base-black;
+}
+
+.numeration__button:hover,
+.numeration__button:focus {
+  background-color: v.$primary-lighter;
+  color: v.$base-white;
+}
+
+.numeration__button:active {
+  background-color: v.$primary-darker;
+}
+
+.numeration__button:disabled {
+  background-color: v.$light-grey;
+  color: v.$base-black;
+}
+
+.numeration__button--next:hover:after ,
+.numeration__button--prev:hover:before {
+  background: v.$base-white;
 }

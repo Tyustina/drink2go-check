@@ -8,6 +8,15 @@
   padding-top: 10px;
 }
 
+.developed__text {
+  display: flex;
+  gap: 3px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: v.$base-grey;
+}
+
 .developed__link {
   display: flex;
   gap: 4px;
@@ -28,11 +37,10 @@
   mask-image: url("../../icons/html-academy.svg");
 }
 
-.developed__text {
-  display: flex;
-  gap: 3px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 133%;
-  color: v.$base-grey;
+.developed__link:hover,
+.developed__link:focus {
+  color: v.$base-primary;
+}
+.developed__link:hover::after {
+  background: v.$base-primary;
 }

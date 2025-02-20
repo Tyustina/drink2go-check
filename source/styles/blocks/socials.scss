@@ -8,7 +8,17 @@
 }
 
 .socials__item {
-  padding: 10px;
+  background-color: transparent;
+}
+
+.socials__link {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
 }
 
 .socials__link--vk::before {
@@ -36,4 +46,23 @@
   display: block;
   background: v.$base-grey;
   mask-image: url("../../icons/ok.svg");
+}
+
+.socials__link--vk:hover::before,
+.socials__link--pinterest:hover::before,
+.socials__link--ok:hover::before {
+  background: v.$base-primary;
+}
+
+.socials__link--vk:hover .socials__item {
+  background-color: red;
+}
+
+.socials__link:hover,
+.socials__link:focus {
+  background-color: v.$base-secondary;
+}
+
+.socials__link:active {
+  background-color: v.$primary-opacity-25;
 }

@@ -56,7 +56,7 @@
   </header>
   <main>
     <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
-    <section class="new" data-test="hero">
+    <!-- <section class="new" data-test="hero">
       <h2 class="visually-hidden">Новинки.</h2>
       <ul class="new__list">
         <li class="new__item new__item--decaf new__item--action">
@@ -154,6 +154,105 @@
         <li class="new__toggle"><span class="visually-hidden">2</span></li>
         <li class="new__toggle"><span class="visually-hidden">3</span></li>
       </ul>
+    </section> -->
+    <section class="new" data-test="hero">
+      <h2 class="visually-hidden">Новинки.</h2>
+      <!-- слайдер -->
+      <ul class="new__list slider-pagination">
+        <li class="pagination__item"><button class="pagination__button pagination__button--prev slider-button-prev"
+            type="button"><span class="visually-hidden">Предыдущий
+              слайд.</span></button></li>
+        <li class="new__item new__item--decaf new__item--action">
+          <picture>
+            <source type="image/webp" media="(min-width:1440px)" width="600" height="600"
+              srcset="./images/decaf-desk.webp 1x, ./images/decaf-desk@2x.webp 2x">
+            <source type="image/webp" media="(min-width:768px)" width="476" height="476"
+              srcset="./img/featured-tablet.webp 1x, ./images/decaf-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./images/decaf-mobile.webp 1x, ./images/decaf-mobile@2x.webp 2x"
+              width="280" height="280">
+            <source type="image/jpeg" media="(min-width:1440px)" width="600" height="600"
+              srcset="./images/decaf-desk.jpg 1x, ./images/decaf-desk@2x.jpg 2x">
+            <source type="image/jpeg" media="(min-width:768px)" width="476" height="476"
+              srcset="./images/decaf-tablet 1x, ./images/decaf-tablet@2x.jpg 2x">
+            <img class="new__img" src="./images/decaf-mobile.png" srcset="./images/decaf-mobile@2x.png" width="280"
+              height="280" alt="Декаф Флэт Уайт.">
+          </picture>
+          <div class="new__text-wrapper">
+            <p class="title">Новинка!</p>
+            <h3 class="new__title">Декаф Флэт Уайт</h3>
+            <p class="new__desc text">Свежесваренный кофе без кофеина из Эфиопии<br class="text__br">
+              с натуральным фермерским молоком — то, что нужно<br class="text__br">
+              для расслабления после тяжёлого рабочего дня</p>
+            <div class="new__price-wrapper">
+              <p class="new__price"><span class="new__price-delete">295&#8381;</span> 225&#8381;</p>
+              <button class="new__button button" type="button">Заказать</button>
+            </div>
+          </div>
+        </li>
+        <li class="new__item new__item--lavender">
+          <picture>
+            <source type="image/webp" media="(min-width:1440px)" width="600" height="600"
+              srcset="./images/lavender-desk.webp 1x, ./images/lavender-desk@2x.webp 2x">
+            <source type="image/webp" media="(min-width:768px)" width="476" height="476"
+              srcset="./img/lavender-tab.webp 1x, ./images/lavender-tab@2x.webp 2x">
+            <source type="image/webp" srcset="./images/lavender-mob.webp 1x, ./images/lavender-mob@2x.webp 2x"
+              width="280" height="280">
+
+            <source type="image/jpeg" media="(min-width:1440px)" width="600" height="600"
+              srcset="./images/lavender-desk.jpg 1x, ./images/lavender-desk@2x.jpg 2x">
+            <source type="image/jpeg" media="(min-width:768px)" width="476" height="476"
+              srcset="./images/lavender-tab 1x, ./images/lavender-tab@2x.jpg 2x">
+            <img class="new__img" src="./images/lavender-mob.png" width="280" height="280"
+              srcset="./images/lavender-mob@2x.png" alt="Лавандовый Латте.">
+          </picture>
+          <div class="new__text-wrapper">
+            <p class="title">Новинка!</p>
+            <h3 class="new__title">Лавандовый Латте</h3>
+            <p class="new__desc text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым
+              сиропом унесёт вас прямо на вершину Радужных гор</p>
+            <div class="new__price-wrapper">
+              <p class="new__price"><del>285&#8381;</del> 265&#8381;</p>
+              <button class="new__button" type="button">Заказать</button>
+            </div>
+          </div>
+        </li>
+        <li class="new__item new__item--espresso">
+          <picture>
+            <source type="image/webp" media="(min-width:1440px)" width="600" height="600"
+              srcset="./images/espresso-desk.webp 1x, ./images/espresso-desk@2x.webp 2x">
+            <source type="image/webp" media="(min-width:768px)" width="476" height="476"
+              srcset="./img/espresso-tab.webp 1x, ./images/espresso-tab@2x.webp 2x">
+            <source type="image/webp" srcset="./images/espresso-mob.webp 1x, ./images/espresso-mob@2x.webp 2x"
+              width="280" height="280">
+
+            <source type="image/jpeg" width="600" height="600" media="(min-width:1440px)"
+              srcset="./images/espresso-desk.jpg 1x, ./images/espresso-desk@2x.jpg 2x">
+            <source type="image/jpeg" width="476" height="476" media="(min-width:768px)"
+              srcset="./images/espresso-tab 1x, ./images/espresso-tab@2x.jpg 2x">
+            <img class="new__img" width="280" height="280" src="./images/espresso-mob.png"
+              srcset="./images/espresso-mob@2x.png" alt="Лавандовый Латте.">
+          </picture>
+          <div class="new__text-wrapper">
+            <p class="title">Новинка!</p>
+            <h3 class="new__title">Тройной Эспрессо</h3>
+            <p class="new__desc text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из
+              Колумбии покажет вам, что такое настоящая бодрость</p>
+            <div class="new__price-wrapper">
+              <p class="new__price"><del>295&#8381;</del> 225&#8381;</p>
+              <button class="new__button" type="button">Заказать</button>
+            </div>
+          </div>
+        </li>
+        <li class="pagination__item"><button class="pagination__button pagination__button--next slider-button-next"
+            type="button"><span class="visually-hidden">Следующий
+              слайд.</span></button></li>
+        <ul class="new__toggles">
+          <li class="new__toggle new__toggle--action"><span class="visually-hidden">1</span></li>
+          <li class="new__toggle"><span class="visually-hidden">2</span></li>
+          <li class="new__toggle"><span class="visually-hidden">3</span></li>
+        </ul>
+      </ul>
+
     </section>
     <section class="featured" data-test="features">
       <h2 class="title">Преимущества</h2>
@@ -385,7 +484,7 @@
         <li><button type="button" class="numeration__button numeration__button--prev"> <span
               class="numeration__text">Назад</span></button></li>
         <li><button type="button" class="numeration__button">1</button></li>
-        <li><button type="button" class="numeration__button">2</button></li>
+        <li><button type="button" class="numeration__button numeration__button--activ">2</button></li>
         <li><button type="button" class="numeration__button">3</button></li>
         <li><button type="button" class="numeration__button numeration__button--next"><span
               class="numeration__text">Вперед</span></button></li>
