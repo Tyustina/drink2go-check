@@ -1,6 +1,10 @@
 @use "../common/variables.scss" as v;
 @use "../common/mixin.scss" as m;
 
+.pagination {
+  @include m.list-reset
+}
+
 .pagination__button {
   @include m.list-reset;
   position: absolute;

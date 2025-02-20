@@ -3,7 +3,6 @@
 
 .user-nav {
   display: flex;
-  padding: 22px;
 }
 
 .user-nav__text {
@@ -22,6 +21,8 @@
 }
 
 .user-nav__button {
+  text-decoration: none;
+  padding: 22px;
   @include m.desktop {
     display: flex;
     gap: 8px;
@@ -49,3 +50,23 @@
   mask-repeat: no-repeat;
   mask-size: cover;
 }
+.user-nav__button--account:hover::before {
+  background-color: v.$base-primary;
+}
+
+.user-nav__button--basket:hover::before {
+  background-color: v.$base-primary;
+}
+
+.user-nav__button:active {
+  background-color: v.$base-secondary;
+}
+
+.user-nav__button:hover .user-nav__text {
+  color: v.$base-primary;
+}
+
+.user-nav__button:focus .user-nav__text {
+  color: v.$base-primary;
+}
+

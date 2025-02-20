@@ -2,13 +2,19 @@
 @use "../common/mixin.scss" as m;
 
 .logo {
+  margin-top: 3px;
   @include m.onli-mobile {
     padding-left: 20px;
+  }
+  @include m.desktop {
+    display: flex;
+    gap: 20px;
   }
 }
 
 .logo__text {
   display: none;
+  margin: 0;
 
   @include m.desktop {
     display: block;

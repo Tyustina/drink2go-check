@@ -23,6 +23,9 @@
 
 .header__user-nav {
   display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 
   @include m.onli-mobile {
     padding-right: 60px;

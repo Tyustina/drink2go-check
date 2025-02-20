@@ -30,6 +30,7 @@
   }
 
   display: flex;
+  flex-wrap: wrap;
 
   @include m.desktop {
     gap: 22px;
@@ -39,22 +40,30 @@
 .nav__item {
   @include m.onli-mobile {
     outline: 1px solid v.$base-secondary;
-    padding-top: 20px;
-    padding-bottom: 21px;
   }
+}
 
-  padding: 32px 20px;
+.nav__link:hover,
+.nav__link:focus {
+  color: v.$base-primary;
+}
+
+.nav__link:active {
+  background-color: v.$base-secondary;
 }
 
 .nav__item--action {
   @include m.tablet {
     border-bottom: 1px solid v.$base-primary;
+    box-sizing: border-box;
   }
 }
 
 .nav__link {
   display: block;
   text-decoration: none;
+  padding: 30px 18px;
+  border: 1px solid transparent;
 }
 
 .nav__text {
@@ -71,13 +80,17 @@
   border: none;
   padding: 0;
   background-color: transparent;
+  padding: 22px;
+}
+
+.nav__toggle:active {
+  background-color: v.$base-secondary;
 }
 
 .nav__toggle-wrapper {
   position: absolute;
   right: 0;
-  top: 0;
-  padding: 22px;
+  top: 2px;
 
   @include m.tablet {
     display: none;
@@ -104,4 +117,8 @@
   mask-image: url("../../icons/nav-opened.svg");
   mask-repeat: no-repeat;
   mask-size: cover;
+}
+
+.nav--opened .nav__toggle-wrapper {
+  top: 0;
 }

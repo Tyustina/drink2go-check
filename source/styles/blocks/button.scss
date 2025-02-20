@@ -13,3 +13,35 @@
   border: none;
   border-radius: 4px;
 }
+
+.button:hover,
+.button:focus {
+  background-color: v.$primary-lighter;
+}
+
+.button:active {
+  background-color: v.$primary-darker;
+}
+
+.button:disabled {
+background-color: v.$base-grey;
+}
+
+.button--light {
+  background-color: v.$base-white;
+  color: v.$base-primary;
+}
+
+.button--light:hover,
+.button--light:focus {
+  background-color: v.$primary-lighter;
+  color: v.$base-white;
+}
+
+.button--light:active {
+  background-color: v.$primary-darker;
+}
+
+.button--light:disabled {
+background-color: v.$light-grey;
+}
