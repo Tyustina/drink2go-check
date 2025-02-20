@@ -28,7 +28,7 @@
   border: 2px solid v.$base-primary;
   border-bottom: none;
   border-right: 0;
-  top: 0;
+  top: -92%;
   left: 35%;
   transform: rotate(-45deg);
 
@@ -46,7 +46,7 @@
   border: 2px solid v.$base-primary;
   border-bottom: none;
   border-left: 0;
-  top: 0;
+  top: -92%;
   left: 0;
   transform: rotate(45deg);
 
@@ -61,4 +61,32 @@
 
 .pagination__button--next {
   right: 0;
+}
+
+
+.pagination__button--prev:hover,
+.pagination__button--prev:focus{
+  background: linear-gradient(90deg, v.$base-white 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+.pagination__button--prev:active {
+  background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+}
+
+.pagination__button--next:hover,
+.pagination__button--next:focus {
+  background: linear-gradient(-90deg, v.$base-white 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.pagination__button--next:active {
+  background: linear-gradient(-90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+}
+
+.pagination__button--next:disabled:before {
+  border-color: v.$base-grey;
+}
+
+.pagination__button--prev:disabled:before {
+  border-color: v.$base-grey;
 }

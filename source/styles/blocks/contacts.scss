@@ -20,7 +20,7 @@
 .contacts__item {
   display: flex;
   max-width: 280px;
-  gap: 10px;
+  gap: 6px;
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;
@@ -28,8 +28,8 @@
 
 .contacts__item--adress::before {
   content: "";
-  width: 13px;
-  height: 16px;
+  width: 19px;
+  height: 21px;
   display: block;
   background: v.$base-primary;
   mask-image: url("../../icons/adress.svg");
@@ -38,14 +38,13 @@
 .contacts__item--tel::before {
   content: "";
   width: 13px;
-  height: 16px;
+  height: 20px;
   display: block;
   background: v.$base-primary;
   mask-image: url("../../icons/tel.svg");
 }
 
 .contacts__link {
-  margin-left: -7px;
   text-decoration: none;
   color: inherit;
 }

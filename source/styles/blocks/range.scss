@@ -9,11 +9,23 @@
   width: 280px;
   height: 2px;
   background-color: v.$light-grey;
+  @include m.tablet{
+    width: 223px;
+  }
+  @include m.desktop {
+    width: 318px;
+  }
 }
 
 .range__bar {
   height: 4px;
   background-color: v.$primary-lighter;
+  @include m.tablet {
+    width: 118px;
+  }
+  @include m.desktop {
+    width: 274px;
+  }
 }
 
 .range__toggle {
@@ -26,6 +38,26 @@
   border: 2px solid v.$primary-lighter;
 }
 
+.range__toggle::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: transparent;
+  top: 2px;
+  left: 2px;
+}
+
+.range__toggle:hover::before,
+.range__toggle:focus::before {
+  background-color: v.$primary-opacity-25;
+}
+
+.range__toggle:active::before {
+  background-color: v.$base-primary;
+}
+
 .range__toggle--min {
   top: -10px;
 }
@@ -33,12 +65,24 @@
 .range__toggle--max {
   top: -10px;
   left: 206px;
+
+  @include m.tablet {
+    left: 151px;
+  }
+
+  @include m.desktop{
+    left: 206px;
+  }
 }
 
 .range__wrapper {
   display: flex;
   justify-content: space-between;
   margin-top: 36px;
+
+  @include m.tablet {
+    margin-top: 32px;
+  }
 }
 
 .range__input {
@@ -52,6 +96,20 @@
   font-size: 16px;
   line-height: 150%;
   text-align: center;
+
+  @include m.tablet {
+    width: 87px;
+    height: 40px;
+  }
+
+  @include m.desktop {
+    width: 134px;
+  height: 40px;
+  }
+}
+
+.range__input::placeholder {
+  color: red;
 }
 
 .range__input--min {
@@ -69,4 +127,9 @@
   height: 2px;
   background-color: v.$base-grey;
   margin: auto 16px auto 0;
+
+  @include m.tablet {
+    margin-right: 0;
+  }
 }
+

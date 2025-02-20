@@ -10,7 +10,7 @@
   left: 2px;
 
   @include m.tablet {
-    left: 60%;
+    left: 61%;
   }
 
   @include m.desktop {
@@ -23,12 +23,24 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
-  text-align: right;
+  text-align: left;
   border: none;
   background-color: transparent;
   color: v.$base-primary;
   margin: 0;
+  appearance: none;
 }
+
+// .sorter__list::after {
+//   position: absolute;
+//   content: "";
+//   display: block;
+//   width: 15px;
+//   height: 15px;
+//   background-image: url("../../icons/arrow.svg");
+//   right: 0;
+//   top: 0;
+// }
 
 .sorter__title {
   margin: 0;
@@ -38,5 +50,4 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
-  text-align: right;
 }

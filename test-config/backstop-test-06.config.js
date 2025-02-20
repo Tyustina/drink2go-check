@@ -55,7 +55,7 @@ export default {
   "engine": "puppeteer",
   "engineOptions": {
     "args": ["--no-sandbox"],
-    "gotoParameters": { "waitUntil": ["load", "networkidle0"], timeout: 20000 },
+    "gotoParameters": { "waitUntil": ["load", "networkidle0"], timeout: 60000 },
   },
   "asyncCaptureLimit": 1,
   "asyncCompareLimit": 50,

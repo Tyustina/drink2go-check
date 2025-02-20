@@ -6,6 +6,9 @@
   display: flex;
   justify-content: center;
   padding-top: 10px;
+  @include m.tablet {
+    padding-top: 28px;
+  }
 }
 
 .developed__text {

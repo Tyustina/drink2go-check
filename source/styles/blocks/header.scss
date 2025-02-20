@@ -2,6 +2,7 @@
 @use "../common/mixin.scss" as m;
 
 .header {
+  @include m.container;
   position: relative;
   display: flex;
   align-items: center;
@@ -28,7 +29,7 @@
   padding: 0;
 
   @include m.onli-mobile {
-    padding-right: 60px;
+    padding-right: 40px;
   }
 
   @include m.desktop {

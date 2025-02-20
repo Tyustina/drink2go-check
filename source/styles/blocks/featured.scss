@@ -4,16 +4,16 @@
 .featured {
   @include m.container;
   display: grid;
-  padding-top: 36px;
+  padding-top: 50px;
   padding-bottom: 60px;
 
   @include m.tablet {
-    padding-top: 214px;
+    padding-top: 64px;
     padding-bottom: 96px;
   }
 
   @include m.desktop {
-    padding-top: 86px;
+    padding-top: 102px;
     padding-bottom: 120px;
   }
 }
@@ -46,7 +46,7 @@
 
   @include m.tablet {
     position: relative;
-    padding-left: 82px;
+    padding-left: 72px;
   }
 
   @include m.desktop {
@@ -107,13 +107,13 @@
 
   @include m.tablet {
     position: absolute;
-    left: 3%;
+    left: 0;
     top: 3%;
   }
 
   @include m.desktop {
     position: relative;
-    top: -35%;
+    top: -12%;
     left: 42%;
   }
 }
@@ -131,7 +131,7 @@
 
   @include m.tablet {
     position: absolute;
-    left: 3%;
+    left: 0;
     top: 3%;
   }
 
@@ -155,7 +155,7 @@
 
   @include m.tablet {
     position: absolute;
-    left: 3%;
+    left: 0;
     top: 3%;
   }
 
@@ -179,7 +179,7 @@
 
   @include m.tablet {
     position: absolute;
-    left: 3%;
+    left: 0;
     top: 3%;
   }
 

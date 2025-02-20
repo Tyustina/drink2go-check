@@ -37,12 +37,23 @@
   top: 9%;
 }
 
+.control__input[type="radio"]:hover + .control__marker::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: 9%;
+  top: 9%;
+  background-color: v.$primary-opacity-25;
+}
+
 .control__marker--checkbox {
   width: 42px;
   height: 24px;
   border-radius: 12px;
   background-color: v.$base-grey;
-  border: none;
+  border: 2px solid transparent;
 }
 
 .control__input[type="checkbox"] + .control__marker::after {
@@ -52,7 +63,7 @@
   height: 20px;
   border-radius: 50%;
   background-color: v.$base-white;
-  top: 9%;
+  top: 0;
   right: 45%;
 }
 
@@ -67,10 +78,52 @@
   height: 20px;
   border-radius: 50%;
   background-color: v.$base-white;
-  top: 9%;
-  right: 5%;
+  top: 0;
+  right: 0;
 }
 
 .control__input[type="checkbox"]:disabled + .control__marker {
   background-color: v.$light-grey;
+}
+
+.control__input[type="radio"]:hover + .control__marker {
+  border-color: v.$primary-lighter;
+}
+
+.control__input[type="radio"]:focus + .control__marker {
+  border-color: v.$primary-lighter;
+}
+
+.control__input[type="radio"]:checked:disabled + .control__marker::after {
+background-color: v.$light-grey;
+}
+
+.control__input[type="radio"]:checked:hover + .control__marker::after {
+  background-color: v.$base-primary;
+}
+
+.control__input[type="radio"]:checked:focus + .control__marker::after {
+  background-color: v.$base-primary;
+}
+
+.control__input[type="checkbox"]:hover + .control__marker {
+  background-color: v.$primary-opacity-25;
+  border-color: v.$base-primary;
+}
+
+.control__input[type="checkbox"]:focus + .control__marker {
+  background-color: v.$primary-opacity-25;
+  border-color: v.$base-primary;
+}
+
+.control__input[type="checkbox"]:checked:disabled + .control__marker::after {
+  background-color: v.$base-grey;
+}
+
+.control__input[type="checkbox"]:checked:hover + .control__marker {
+  background-color: v.$base-primary;
+}
+
+.control__input[type="checkbox"]:checked:focus + .control__marker {
+  background-color: v.$base-primary;
 }

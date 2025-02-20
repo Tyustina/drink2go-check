@@ -24,6 +24,7 @@
 .form__group {
   border: none;
   padding: 0;
+  margin: 0;
 }
 
 .form__list {
@@ -39,6 +40,10 @@
   line-height: 150%;
   margin-bottom: 20px;
   margin-left: -5px;
+
+  @include m.tablet {
+    margin-left: 0;
+  }
 }
 
 .form__item {

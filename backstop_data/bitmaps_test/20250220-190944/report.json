@@ -1,0 +1,510 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_0_index_header_TEST-06_PP_0__0_desktop.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_0_index_header_TEST-06_PP_0__0_desktop.png",
+        "selector": "[data-test=\"header\"]",
+        "fileName": "drink2gotest-06_0_index_header_TEST-06_PP_0__0_desktop.png",
+        "label": "index header TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 12.3359375,
+          "misMatchPercentage": "12.34",
+          "analysisTime": 366
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_0_index_header_TEST-06_PP_0__0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_0_index_header_TEST-06_PP_0__1_tablet.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_0_index_header_TEST-06_PP_0__1_tablet.png",
+        "selector": "[data-test=\"header\"]",
+        "fileName": "drink2gotest-06_0_index_header_TEST-06_PP_0__1_tablet.png",
+        "label": "index header TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 30.392252604166664,
+          "misMatchPercentage": "30.39",
+          "analysisTime": 384
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_0_index_header_TEST-06_PP_0__1_tablet.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_0_index_header_TEST-06_PP_0__2_mobile.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_0_index_header_TEST-06_PP_0__2_mobile.png",
+        "selector": "[data-test=\"header\"]",
+        "fileName": "drink2gotest-06_0_index_header_TEST-06_PP_0__2_mobile.png",
+        "label": "index header TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 48.52604166666667,
+          "misMatchPercentage": "48.53",
+          "analysisTime": 373
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_0_index_header_TEST-06_PP_0__2_mobile.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_1_index_hero_TEST-06_PP_0__0_desktop.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_1_index_hero_TEST-06_PP_0__0_desktop.png",
+        "selector": "[data-test=\"hero\"]",
+        "fileName": "drink2gotest-06_1_index_hero_TEST-06_PP_0__0_desktop.png",
+        "label": "index hero TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 9.506983348895114,
+          "misMatchPercentage": "9.51",
+          "analysisTime": 1423
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_1_index_hero_TEST-06_PP_0__0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_1_index_hero_TEST-06_PP_0__1_tablet.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_1_index_hero_TEST-06_PP_0__1_tablet.png",
+        "selector": "[data-test=\"hero\"]",
+        "fileName": "drink2gotest-06_1_index_hero_TEST-06_PP_0__1_tablet.png",
+        "label": "index hero TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 16.682864080112722,
+          "misMatchPercentage": "16.68",
+          "analysisTime": 2115
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_1_index_hero_TEST-06_PP_0__1_tablet.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_1_index_hero_TEST-06_PP_0__2_mobile.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_1_index_hero_TEST-06_PP_0__2_mobile.png",
+        "selector": "[data-test=\"hero\"]",
+        "fileName": "drink2gotest-06_1_index_hero_TEST-06_PP_0__2_mobile.png",
+        "label": "index hero TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 24.36499618902439,
+          "misMatchPercentage": "24.36",
+          "analysisTime": 1159
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_1_index_hero_TEST-06_PP_0__2_mobile.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_2_index_features_TEST-06_PP_0__0_desktop.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_2_index_features_TEST-06_PP_0__0_desktop.png",
+        "selector": "[data-test=\"features\"]",
+        "fileName": "drink2gotest-06_2_index_features_TEST-06_PP_0__0_desktop.png",
+        "label": "index features TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 5.822553148816686,
+          "misMatchPercentage": "5.82",
+          "analysisTime": 577
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_2_index_features_TEST-06_PP_0__0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_2_index_features_TEST-06_PP_0__1_tablet.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_2_index_features_TEST-06_PP_0__1_tablet.png",
+        "selector": "[data-test=\"features\"]",
+        "fileName": "drink2gotest-06_2_index_features_TEST-06_PP_0__1_tablet.png",
+        "label": "index features TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 12.98921130952381,
+          "misMatchPercentage": "12.99",
+          "analysisTime": 820
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_2_index_features_TEST-06_PP_0__1_tablet.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_2_index_features_TEST-06_PP_0__2_mobile.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_2_index_features_TEST-06_PP_0__2_mobile.png",
+        "selector": "[data-test=\"features\"]",
+        "fileName": "drink2gotest-06_2_index_features_TEST-06_PP_0__2_mobile.png",
+        "label": "index features TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 14.390243902439023,
+          "misMatchPercentage": "14.39",
+          "analysisTime": 1227
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_2_index_features_TEST-06_PP_0__2_mobile.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_3_index_catalog_TEST-06_PP_0__0_desktop.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_3_index_catalog_TEST-06_PP_0__0_desktop.png",
+        "selector": "[data-test=\"catalog\"]",
+        "fileName": "drink2gotest-06_3_index_catalog_TEST-06_PP_0__0_desktop.png",
+        "label": "index catalog TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 6.466342464702271,
+          "misMatchPercentage": "6.47",
+          "analysisTime": 1195
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_3_index_catalog_TEST-06_PP_0__0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_3_index_catalog_TEST-06_PP_0__1_tablet.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_3_index_catalog_TEST-06_PP_0__1_tablet.png",
+        "selector": "[data-test=\"catalog\"]",
+        "fileName": "drink2gotest-06_3_index_catalog_TEST-06_PP_0__1_tablet.png",
+        "label": "index catalog TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 7.805888323421775,
+          "misMatchPercentage": "7.81",
+          "analysisTime": 1509
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_3_index_catalog_TEST-06_PP_0__1_tablet.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_3_index_catalog_TEST-06_PP_0__2_mobile.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_3_index_catalog_TEST-06_PP_0__2_mobile.png",
+        "selector": "[data-test=\"catalog\"]",
+        "fileName": "drink2gotest-06_3_index_catalog_TEST-06_PP_0__2_mobile.png",
+        "label": "index catalog TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 9.997589760638299,
+          "misMatchPercentage": "10.00",
+          "analysisTime": 1254
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_3_index_catalog_TEST-06_PP_0__2_mobile.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_4_index_map_TEST-06_PP_0__0_desktop.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_4_index_map_TEST-06_PP_0__0_desktop.png",
+        "selector": "[data-test=\"map\"]",
+        "fileName": "drink2gotest-06_4_index_map_TEST-06_PP_0__0_desktop.png",
+        "label": "index map TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 1,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 41.92361111111111,
+          "misMatchPercentage": "41.92",
+          "analysisTime": 2339
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_4_index_map_TEST-06_PP_0__0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_4_index_map_TEST-06_PP_0__1_tablet.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_4_index_map_TEST-06_PP_0__1_tablet.png",
+        "selector": "[data-test=\"map\"]",
+        "fileName": "drink2gotest-06_4_index_map_TEST-06_PP_0__1_tablet.png",
+        "label": "index map TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 1,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 59.96310763888889,
+          "misMatchPercentage": "59.96",
+          "analysisTime": 2579
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_4_index_map_TEST-06_PP_0__1_tablet.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_4_index_map_TEST-06_PP_0__2_mobile.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_4_index_map_TEST-06_PP_0__2_mobile.png",
+        "selector": "[data-test=\"map\"]",
+        "fileName": "drink2gotest-06_4_index_map_TEST-06_PP_0__2_mobile.png",
+        "label": "index map TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 1,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 53.211309523809526,
+          "misMatchPercentage": "53.21",
+          "analysisTime": 1422
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_4_index_map_TEST-06_PP_0__2_mobile.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_5_index_footer_TEST-06_PP_0__0_desktop.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_5_index_footer_TEST-06_PP_0__0_desktop.png",
+        "selector": "[data-test=\"footer\"]",
+        "fileName": "drink2gotest-06_5_index_footer_TEST-06_PP_0__0_desktop.png",
+        "label": "index footer TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 8.048073325851103,
+          "misMatchPercentage": "8.05",
+          "analysisTime": 631
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_5_index_footer_TEST-06_PP_0__0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_5_index_footer_TEST-06_PP_0__1_tablet.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_5_index_footer_TEST-06_PP_0__1_tablet.png",
+        "selector": "[data-test=\"footer\"]",
+        "fileName": "drink2gotest-06_5_index_footer_TEST-06_PP_0__1_tablet.png",
+        "label": "index footer TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 17.342476222826086,
+          "misMatchPercentage": "17.34",
+          "analysisTime": 719
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_5_index_footer_TEST-06_PP_0__1_tablet.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/test-06/drink2gotest-06_5_index_footer_TEST-06_PP_0__2_mobile.png",
+        "test": "../bitmaps_test/20250220-190944/drink2gotest-06_5_index_footer_TEST-06_PP_0__2_mobile.png",
+        "selector": "[data-test=\"footer\"]",
+        "fileName": "drink2gotest-06_5_index_footer_TEST-06_PP_0__2_mobile.png",
+        "label": "index footer TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "engineErrorMsg": "Navigation timeout of 20000 ms exceeded",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 16.86149135446686,
+          "misMatchPercentage": "16.86",
+          "analysisTime": 765
+        },
+        "diffImage": "../bitmaps_test/20250220-190944/failed_diff_drink2gotest-06_5_index_footer_TEST-06_PP_0__2_mobile.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "drink2go test-06"
+}

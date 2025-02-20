@@ -2,9 +2,14 @@
 @use "../common/mixin.scss" as m;
 
 .footer {
-  @include m.container;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
   @include m.tablet {
-    padding-top: 40px;
+    @include m.container;
+    max-width: 768px;
+    padding-top: 20px;
     padding-bottom: 40px;
   }
 
@@ -14,19 +19,22 @@
   }
 }
 
+
 .footer__wrapper-1 {
   display: flex;
-  justify-content: space-between;
-  padding-top: 25px;
+  padding-top: 16px;
   padding-bottom: 18px;
+
 
   @include m.onli-mobile {
     gap: 38px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @include m.tablet {
-    padding-top: 0;
-    padding-bottom: 32px;
+    justify-content: space-between;
+    padding-bottom: 28px;
   }
 
   @include m.desktop {

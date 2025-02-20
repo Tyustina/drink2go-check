@@ -2,10 +2,7 @@
 @use "../common/mixin.scss" as m;
 
 .logo {
-  margin-top: 3px;
-  @include m.onli-mobile {
-    padding-left: 20px;
-  }
+  margin-top: 2px;
   @include m.desktop {
     display: flex;
     gap: 20px;
