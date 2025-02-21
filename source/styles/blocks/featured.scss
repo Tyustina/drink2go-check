@@ -8,8 +8,8 @@
   padding-bottom: 60px;
 
   @include m.tablet {
-    padding-top: 64px;
-    padding-bottom: 96px;
+    padding-top: 60px;
+    padding-bottom: 100px;
   }
 
   @include m.desktop {
@@ -21,15 +21,16 @@
 .featured__list {
   @include m.list-reset;
   display: grid;
-  row-gap: 41px;
-  margin-top: 45px;
+  row-gap: 42px;
+  padding-top: 46px;
   margin-left: auto;
   margin-right: auto;
 
   @include m.tablet {
     grid-template-columns: 340px 340px;
-    gap: 50px 30px;
-    margin-top: 60px;
+    gap: 48px 30px;
+    padding-top: 60px;
+    margin-top: 0;
   }
 
   @include m.desktop {
@@ -60,7 +61,6 @@
   line-height: 178%;
   text-align: center;
   margin: 0;
-  margin-bottom: 4px;
 
   @include m.tablet {
     text-align: left;
@@ -75,23 +75,17 @@
 }
 
 .featured__desc {
+  padding-top: 4px;
   @include m.tablet {
     text-align: left;
     font-size: 16px;
     line-height: 150%;
+    padding-top: 2px;
   }
 
   @include m.desktop {
     text-align: center;
   }
-}
-
-.featured__item--eco {
-  margin-top: 2px;
-}
-
-.featured__item--energy {
-  margin-top: 1px;
 }
 
 .featured__item--speed::before {
@@ -156,7 +150,7 @@
   @include m.tablet {
     position: absolute;
     left: 0;
-    top: 3%;
+    top: 0;
   }
 
   @include m.desktop {

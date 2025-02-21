@@ -4,15 +4,15 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 22px;
   padding: 42px 20px 20px;
   background-color: v.$base-white;
   border-radius: 4px;
   place-items: center center;
   margin: 0 auto;
+  max-width: 349px;
 
   @include m.tablet {
-
     gap: 30px;
     padding-top: 50px;
     padding-left: 30px;
@@ -27,10 +27,8 @@
   font-size: 18px;
   line-height: 178%;
   margin: 0;
-  margin-bottom: 4px;
 
   @include m.tablet {
-    margin-bottom: 10px;
     font-size: 24px;
     line-height: 150%;
   }
@@ -43,10 +41,14 @@
 
 .card__text {
   text-align: left;
+  padding-top: 4px;
+  padding-bottom: 16px;
 
   @include m.tablet {
     font-size: 14px;
     line-height: 143%;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 }
 
@@ -54,11 +56,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 16px;
+  padding-right: 2px;
+  margin-left: -2px;
 
-  @include m.tablet {
-    margin-top: 20px;
-    gap: 96px;
+  @include m.desktop {
+    gap: 65px;
   }
 }
 
@@ -89,5 +91,5 @@
 
 
 .card__img {
-  height: 188px;
+  display: block;
 }

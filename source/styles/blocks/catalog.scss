@@ -6,21 +6,26 @@
   display: flex;
   flex-direction: column;
   padding-top: 50px;
-  padding-bottom: 42px;
+  padding-bottom: 44px;
   @include m.tablet {
-    padding-top: 82px;
+    max-width: 768px;
+    padding-top: 78px;
     padding-bottom: 90px;
   }
   @include m.desktop {
-    padding-top: 98px;
+    max-width: 1440px;
+    padding-top: 94px;
+    padding-bottom: 118px;
   }
 }
 
 .catalog__list {
   @include m.list-reset;
   display: grid;
-  gap: 18px;
+  gap: 20px;
   margin-top: 87px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include m.tablet {
     grid-template-columns: 1fr 1fr;
@@ -29,7 +34,7 @@
   }
 
   @include m.desktop {
-    grid-template-columns: max-content max-content max-content;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 

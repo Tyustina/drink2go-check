@@ -7,6 +7,7 @@
     margin-bottom: 18px;
     padding-top: 21px;
   }
+
 }
 
 .contacts__list {
@@ -24,6 +25,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;
+  @include m.desktop {
+    gap: 5px;
+  }
 }
 
 .contacts__item--adress::before {

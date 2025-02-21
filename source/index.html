@@ -67,7 +67,7 @@
             <source type="image/webp" media="(min-width:1440px)" width="600" height="600"
               srcset="./images/decaf-desk.webp 1x, ./images/decaf-desk@2x.webp 2x">
             <source type="image/webp" media="(min-width:768px)" width="476" height="476"
-              srcset="./img/featured-tablet.webp 1x, ./images/decaf-tablet@2x.webp 2x">
+              srcset="./images/decaf-tablet.webp 1x, ./images/decaf-tablet@2x.webp 2x">
             <source type="image/webp" srcset="./images/decaf-mobile.webp 1x, ./images/decaf-mobile@2x.webp 2x"
               width="280" height="280">
             <source type="image/jpeg" media="(min-width:1440px)" width="600" height="600"
@@ -80,8 +80,8 @@
           <div class="new__text-wrapper">
             <p class="title">Новинка!</p>
             <h3 class="new__title">Декаф Флэт Уайт</h3>
-            <p class="new__desc text">Свежесваренный кофе без кофеина из Эфиопии<br class="text__br">
-              с натуральным фермерским молоком — то, что нужно<br class="text__br">
+            <p class="new__desc text">Свежесваренный кофе без кофеина из Эфиопии <br class="text__br">
+              с натуральным фермерским молоком — то, что нужно <br class="text__br">
               для расслабления после тяжёлого рабочего дня</p>
             <div class="new__price-wrapper">
               <p class="new__price"><span class="new__price-delete">295&#8381;</span> 225&#8381;</p>
@@ -94,7 +94,7 @@
             <source type="image/webp" media="(min-width:1440px)" width="600" height="600"
               srcset="./images/lavender-desk.webp 1x, ./images/lavender-desk@2x.webp 2x">
             <source type="image/webp" media="(min-width:768px)" width="476" height="476"
-              srcset="./img/lavender-tab.webp 1x, ./images/lavender-tab@2x.webp 2x">
+              srcset="./images/lavender-tab.webp 1x, ./images/lavender-tab@2x.webp 2x">
             <source type="image/webp" srcset="./images/lavender-mob.webp 1x, ./images/lavender-mob@2x.webp 2x"
               width="280" height="280">
 
@@ -121,7 +121,7 @@
             <source type="image/webp" media="(min-width:1440px)" width="600" height="600"
               srcset="./images/espresso-desk.webp 1x, ./images/espresso-desk@2x.webp 2x">
             <source type="image/webp" media="(min-width:768px)" width="476" height="476"
-              srcset="./img/espresso-tab.webp 1x, ./images/espresso-tab@2x.webp 2x">
+              srcset="./images/espresso-tab.webp 1x, ./images/espresso-tab@2x.webp 2x">
             <source type="image/webp" srcset="./images/espresso-mob.webp 1x, ./images/espresso-mob@2x.webp 2x"
               width="280" height="280">
 
@@ -277,7 +277,7 @@
         </form>
         <ul class="catalog__list">
           <li class="catalog__item card">
-            <picture class="card__img">
+            <picture>
               <source type="image/webp" width="130" height="188"
                 srcset="./images/card-1.webp 1x, ./images/card-1@2x.webp 2x">
               <img class="card__img" width="130" height="188" src="./images/card-1.png" srcset="./images/card-1@2x.png"
@@ -294,7 +294,7 @@
             </div>
           </li>
           <li class="catalog__item card">
-            <picture class="card__img">
+            <picture>
               <source type="image/webp" width="130" height="188"
                 srcset="./images/card-2.webp 1x, ./images/card-2@2x.webp 2x">
               <img class="card__img" width="130" height="188" src="./images/card-2.png" srcset="./images/card-2@2x.png"
@@ -311,7 +311,7 @@
             </div>
           </li>
           <li class="catalog__item card">
-            <picture class="card__img">
+            <picture>
               <source type="image/webp" width="130" height="188"
                 srcset="./images/card-3.webp 1x, ./images/card-3@2x.webp 2x">
               <img class="card__img" width="130" height="188" src="./images/card-3.png" srcset="./images/card-3@2x.png"
@@ -328,7 +328,7 @@
             </div>
           </li>
           <li class="catalog__item card">
-            <picture class="card__img">
+            <picture>
               <source type="image/webp" width="130" height="188"
                 srcset="./images/card-4.webp 1x, ./images/card-4@2x.webp 2x">
               <img class="card__img" width="130" height="188" src="./images/card-4.png" srcset="./images/card-4@2x.png"
@@ -345,7 +345,7 @@
             </div>
           </li>
           <li class="catalog__item card">
-            <picture class="card__img">
+            <picture>
               <source type="image/webp" width="130" height="188"
                 srcset="./images/card-5.webp 1x, ./images/card-5@2x.webp 2x">
               <img class="card__img" width="130" height="188" src="./images/card-5.png" srcset="./images/card-5@2x.png"
@@ -362,7 +362,7 @@
             </div>
           </li>
           <li class="catalog__item card">
-            <picture class="card__img">
+            <picture>
               <source type="image/webp" width="130" height="188"
                 srcset="./images/card-6.webp 1x, ./images/card-6@2x.webp 2x">
               <img class="card__img" width="130" height="188" src="./images/card-6.png" srcset="./images/card-6@2x.png"
@@ -379,17 +379,19 @@
             </div>
           </li>
         </ul>
+        <ul class="catalog__numeration numeration">
+          <li><button type="button" class="numeration__button numeration__button--prev"> <span
+                class="numeration__text">Назад</span></button></li>
+          <li><button type="button" class="numeration__button numeration__button--1">1</button></li>
+          <li><button type="button" class="numeration__button numeration__button--2 numeration__button--activ">2</button>
+          </li>
+          <li><button type="button" class="numeration__button numeration__button--3">3</button>
+          </li>
+          <li><button type="button" class="numeration__button numeration__button--next"><span
+                class="numeration__text">Вперед</span></button></li>
+        </ul>
       </div>
-      <ul class="catalog__numeration numeration">
-        <li><button type="button" class="numeration__button numeration__button--prev"> <span
-              class="numeration__text">Назад</span></button></li>
-        <li><button type="button" class="numeration__button numeration__button--1">1</button></li>
-        <li><button type="button" class="numeration__button numeration__button--2">2</button></li>
-        <li><button type="button" class="numeration__button numeration__button--3 numeration__button--activ">3</button>
-        </li>
-        <li><button type="button" class="numeration__button numeration__button--next"><span
-              class="numeration__text">Вперед</span></button></li>
-      </ul>
+
     </section>
     <section class="map" data-test="map">
       <h2 class="visually-hidden">Как нас найти.</h2>
@@ -397,7 +399,7 @@
         <source type="image/webp" media="(min-width:1440px)" width="1440" height="540"
           srcset="./images/map-desk.webp 1x, ./images/map-desk@2x.webp 2x">
         <source type="image/webp" media="(min-width:768px)" width="768" height="480"
-          srcset="./img/map-tab.webp 1x, ./images/map-tab@2x.webp 2x">
+          srcset="./images/map-tab.webp 1x, ./images/map-tab@2x.webp 2x">
         <source type="image/webp" width="320" height="420"
           srcset="./images/map-mob.webp 1x, ./images/map-mob@2x.webp 2x">
         <source type="image/jpeg" media="(min-width:1440px)" width="1440" height="540"
@@ -409,17 +411,15 @@
     </section>
     <footer class="footer" data-test="footer">
       <div class="footer__wrapper-1">
-        <div class="footer__logo">
-          <div class="logo">
-            <a href="https://htmlacademy.ru/intensive/adaptive">
-              <picture>
-                <source type="image/svg+xml" media="(min-width:768px)" srcset="./images/logo-large.svg" width="170"
-                  height="36">
-                <img src="./images/logo-medium.svg" width="82" height="36" alt="Логотип Drink2Go.">
-              </picture>
-            </a>
-            <p class="logo__text">Интернет-магазин кофейных напитков</p>
-          </div>
+        <div class="footer__logo logo">
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <picture>
+              <source type="image/svg+xml" media="(min-width:768px)" srcset="./images/logo-large.svg" width="170"
+                height="36">
+              <img src="./images/logo-medium.svg" width="82" height="36" alt="Логотип Drink2Go.">
+            </picture>
+          </a>
+          <p class="footer__text logo__text">Интернет-магазин кофейных напитков</p>
         </div>
         <div class="socials">
           <ul class="socials__list">
