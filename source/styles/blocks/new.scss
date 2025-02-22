@@ -1,40 +1,67 @@
 @use "../common/variables.scss" as v;
 @use "../common/mixin.scss" as m;
 
-.new {
-  position: relative;
+.new__page-wrapper {
+  display: flex;
 }
 
 .new__list {
   @include m.list-reset;
+  position: relative;
+  margin: 0 auto;
 }
 
 .new__item {
-  @include m.container;
   display: none;
 }
 
-.new__item--action {
+.new__item-pagination {
+  display: flex;
+}
+
+.new__item-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 10px;
   padding-top: 20px;
   padding-bottom: 60px;
   align-items: center;
+  margin: 0 auto;
 
   @include m.tablet {
-    flex-direction: column-reverse;
-    padding-bottom: 300px;
-    padding-top: 60px;
-    margin-bottom: 190px;
+    padding-top: 50px;
+    padding-bottom: 308px;
   }
 
   @include m.desktop {
     display: grid;
     gap: 30px;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: 1fr 1fr;
     padding-top: 30px;
-    padding-bottom: 80px;
+    padding-bottom: 84px;
+    margin: 0 auto;
+  }
+}
+
+.new__text-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include m.desktop {
+    align-items: flex-start;
+    margin-top: -8px;
+  }
+}
+
+.new__item--action {
+  display: flex;
+  margin: 0 auto;
+  @include m.tablet {
+    margin-bottom: 188px;
+  }
+  @include m.desktop {
     margin: 0;
   }
 }
@@ -51,37 +78,38 @@
   background-color: v.$espresso;
 }
 
-.new__text-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+.new__title {
+  margin-bottom: 4px;
+  @include m.tablet{
+    margin-top: -1px;
+  }
   @include m.desktop {
-    align-items: flex-start;
-    margin-bottom: 10px;
+    margin: 0;
   }
 }
-
-.new__title {
+.new__heading {
   font-weight: 700;
   font-size: 36px;
-  line-height: 133%;
+  line-height: 48px;
   letter-spacing: 0.02em;
   text-align: center;
   margin: 0;
-  padding-bottom: 16px;
-  padding-top: 4px;
+  padding-bottom: 10px;
 
   @include m.tablet {
     font-size: 56px;
-    line-height: 143%;
-    margin-left: 2px;
+    line-height: 80px;
+    padding: 0;
+    margin-bottom: 16px;
   }
 }
 
 .new__desc {
+  padding: 0 20px;
+
   @include m.desktop {
     text-align: left;
+    padding: 0;
   }
 }
 
@@ -95,20 +123,21 @@
   }
 
   @include m.desktop {
-    margin-top: 40px;
-
+    padding-top: 40px;
   }
 }
 
 .new__price {
   font-weight: 600;
   font-size: 20px;
-  line-height: 160%;
+  line-height: 32px;
   color: v.$base-black;
   margin: 0;
-  padding-top: 3px;
+  padding-top: 4px;
 
   @include m.tablet {
+    display: flex;
+    gap: 6px;
     padding-top: 4px;
   }
 }
@@ -116,11 +145,16 @@
 .new__price-delete {
   font-weight: 400;
   font-size: 16px;
-  line-height: 200%;
+  line-height: 32px;
   text-decoration: line-through;
   color: v.$base-primary;
 }
 
+.new__button {
+  @include m.tablet {
+    padding-right: 21px;
+  }
+}
 .new__img {
   width: 280px;
   height: 280px;
@@ -128,8 +162,8 @@
 
   @include m.tablet {
     position: absolute;
-    left: 50% ;
-    top: 55%;
+    left: 50%;
+    top: 351px;
     transform: translateX(-50%);
     width: 476px;
     height: 476px;
@@ -139,7 +173,7 @@
     position: static;
     width: 600px;
     height: 600px;
-    margin-left: 65px;
+    margin-left: 105px;
     transform: none;
   }
 }
@@ -152,7 +186,7 @@
     position: absolute;
     display: flex;
     gap: 8px;
-    bottom: 70px;
+    bottom: 71px;
     left: 43%;
   }
 }

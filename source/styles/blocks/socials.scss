@@ -4,6 +4,7 @@
 .socials__list {
   @include m.list-reset;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 

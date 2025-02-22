@@ -16,6 +16,7 @@
   background-color: transparent;
   flex-shrink: 0;
   left: 0;
+  cursor: pointer;
 }
 
 .control__input[type="radio"]:checked + .control__marker {

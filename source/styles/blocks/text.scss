@@ -4,13 +4,13 @@
 .text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 143%;
+  line-height: 20px;
   text-align: center;
   margin: 0;
 
   @include m.tablet {
     font-size: 20px;
-    line-height: 160%;
+    line-height: 32px;
   }
 }
 

@@ -2,20 +2,32 @@
 @use "../common/mixin.scss" as m;
 
 .catalog {
-  @include m.container;
-  display: flex;
-  flex-direction: column;
+  background-color: v.$lightest-grey;
   padding-top: 50px;
   padding-bottom: 44px;
   @include m.tablet {
-    max-width: 768px;
     padding-top: 78px;
     padding-bottom: 90px;
   }
+
   @include m.desktop {
-    max-width: 1440px;
     padding-top: 94px;
     padding-bottom: 118px;
+  }
+}
+
+.catalog__page-wrapper {
+  @include m.container;
+  display: flex;
+  flex-direction: column;
+  background-color: v.$lightest-grey;
+
+  @include m.tablet {
+    max-width: 768px;
+  }
+
+  @include m.desktop {
+    max-width: 1440px;
   }
 }
 

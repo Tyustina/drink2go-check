@@ -5,11 +5,12 @@
   @include m.container;
   position: relative;
   display: flex;
+  gap: 44px;
   align-items: center;
   justify-content: space-between;
 
   @include m.tablet {
-    @include m.container;
+    margin: 0;
   }
 }
 

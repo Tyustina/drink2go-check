@@ -29,11 +29,15 @@
   border-bottom: none;
   border-right: 0;
   top: 0;
-  left: 8px;
-  transform: rotate(-45deg);
+  left: 7px;
+  transform: rotate(-46deg);
 
   @include m.tablet {
-    left: 46%;
+    left: 36px;
+    top: -94px;
+  }
+  @include m.desktop {
+    top: 0;
   }
 }
 
@@ -47,11 +51,17 @@
   border-bottom: none;
   border-left: 0;
   top: 0;
-  left: 0;
+  right: 1px;
   transform: rotate(45deg);
 
   @include m.tablet {
-    left: 36%;
+    right: 0;
+    left: 28px;
+    top: -94px;
+  }
+
+  @include m.desktop {
+    top: 0;
   }
 }
 

@@ -2,32 +2,35 @@
 @use "../common/mixin.scss" as m;
 
 .map {
+  width: auto;
+  height: 420px;
   display: flex;
-}
-
-.map__img {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.map__img::before {
-  position: absolute;
-  content: "";
-  width: 38px;
-  height: 50px;
-  display: block;
-  background-image: url("../../icons/map-pin.svg");
-  top: 185px;
-  left: 156px;
-
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: image-set(
+      url("../../images/map-mob.webp") 1x type("image/webp"),
+      url("../../images/map-mob@2x.webp") 2x type("image/webp"),
+      url("../../images/map-mob.png") 1x type("image/png"),
+      url("../../images/map-mob@2x.png") 2x type("image/png")
+    );
   @include m.tablet {
-    top: 215px;
-    left: 380px;
+    height: 480px;
+    background-image: image-set(
+      url("../../images/map-tab.webp") 1x type("image/webp"),
+      url("../../images/map-tab@2x.webp") 2x type("image/webp"),
+      url("../../images/map-tab.png") 1x type("image/png"),
+      url("../../images/map-tab@2x.png") 2x type("image/png")
+    );
   }
-
   @include m.desktop {
-    top: 245px;
-    left: 716px;
-  }
+    height: 540px;
+    background-image: image-set(
+      url("../../images/map-desk.webp") 1x type("image/webp"),
+      url("../../images/map-desk@2x.webp") 2x type("image/webp"),
+      url("../../images/map-desk.png") 1x type("image/png"),
+      url("../../images/map-desk@2x.png") 2x type("image/png")
+    );
+    background-position: 1px 0;
+}
 }
