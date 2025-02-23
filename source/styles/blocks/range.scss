@@ -1,36 +1,42 @@
 @use "../common/variables.scss" as v;
 @use "../common/mixin.scss" as m;
 
-.range {
-  margin-top: 10px;
+.range__slider {
+  margin-top: 8px;
 }
 
-.range__scale {
-  width: 280px;
+.noUi-target {
+  width: 270px;
   height: 2px;
+  border: none;
+  box-shadow: none;
   background-color: v.$light-grey;
+
   @include m.tablet{
-    width: 223px;
+    width: 213px;
   }
   @include m.desktop {
-    width: 318px;
+    width: 300px;
   }
 }
 
-.range__bar {
-  height: 4px;
+.noUi-connect  {
+  width: 100%;
   background-color: v.$primary-lighter;
-  @include m.tablet {
-    width: 118px;
-  }
-  @include m.desktop {
-    width: 274px;
-  }
+  // @include m.tablet {
+  //   width: 118px;
+  // }
+  // @include m.desktop {
+  //   width: 274px;
+  // }
 }
 
-.range__toggle {
-  position: relative;
-  content: "";
+.noUi-horizontal {
+  height: 2px;
+}
+.noUi-horizontal .noUi-handle {
+  // right: -21px;
+  // top: -10px;
   width: 24px;
   height: 24px;
   background-color: v.$base-white;
@@ -39,7 +45,11 @@
   cursor: pointer;
 }
 
-.range__toggle::before {
+.noUi-handle::after {
+  display: none;
+}
+
+.noUi-handle::before {
   position: absolute;
   content: "";
   width: 16px;
@@ -59,13 +69,9 @@
   background-color: v.$base-primary;
 }
 
-.range__toggle--min {
-  top: -10px;
-}
 
-.range__toggle--max {
-  top: -10px;
-  left: 206px;
+.noUi-handle-upper {
+  left: 271px;
 
   @include m.tablet {
     left: 151px;

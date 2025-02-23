@@ -1,8 +1,8 @@
 @use "../common/variables.scss" as v;
 @use "../common/mixin.scss" as m;
 
-.pagination {
-  @include m.list-reset
+.pagination__item{
+  display: flex;
 }
 
 .pagination__button {
@@ -13,7 +13,7 @@
   top: 0;
   border: none;
   background-color: transparent;
-
+  z-index: 50;
   @include m.tablet {
     width: 80px;
   }
@@ -34,7 +34,7 @@
 
   @include m.tablet {
     left: 36px;
-    top: -94px;
+    top: -88px;
   }
   @include m.desktop {
     top: 0;
@@ -57,7 +57,7 @@
   @include m.tablet {
     right: 0;
     left: 28px;
-    top: -94px;
+    top: -88px;
   }
 
   @include m.desktop {

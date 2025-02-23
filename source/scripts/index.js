@@ -10,3 +10,36 @@ navToggle.addEventListener('click', function(){
     navMain.classList.remove('nav--opened');
   }
 })
+
+const slides = document.querySelectorAll('.new__item');
+const prevButton = document.querySelector('.slider-button-prev');
+const nextButton = document.querySelector('.slider-button-next');
+
+let currentSlideIndex = 0;
+
+function showSlide(i, saveState = true) {
+  slides.forEach(slide =>
+    slide.classList.remove('new__item--action'));
+
+    slides[i].classList.add('new__item--action');
+    currentSlideIndex = i;
+
+    if(saveState) {
+      history.pushState({slideIndex: i}, '', null);
+    }
+
+}
+
+function nextSlide() {
+  const nextIndex = (currentSlideIndex + 1) % slides.length;
+  showSlide(nextIndex);
+}
+
+function prevSlide() {
+  const prevIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+  showSlide(prevIndex);
+}
+
+nextButton.addEventListener('click', nextSlide);
+prevButton.addEventListener('click', prevSlide);
+

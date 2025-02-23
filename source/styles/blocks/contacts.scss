@@ -4,13 +4,16 @@
 .contacts {
   @include m.onli-mobile {
     @include m.container;
-    margin-bottom: 18px;
-    padding-top: 21px;
+    margin-bottom: 20px;
+    padding-top: 20px;
   }
 
 }
 
 .contacts__list {
+  @include m.onli-mobile{
+    margin-top: 20px;
+  }
   @include m.list-reset;
   display: flex;
   flex-direction: column;
