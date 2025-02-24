@@ -2,8 +2,6 @@
 @use "../common/mixin.scss" as m;
 
 .logo {
-  // margin-top: 2px;
-
   @include m.desktop {
     display: flex;
     gap: 20px;

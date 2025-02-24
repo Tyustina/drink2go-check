@@ -145,6 +145,16 @@
   }
 }
 
+.range__input:focus {
+  border-color: v.$primary-darker;
+}
+
+.range__input:disabled {
+  border-color: v.$light-grey;
+  background-color: v.$lightest-grey;
+  color: v.$base-grey;
+}
+
 .range__line {
   position: relative;
   content: "";

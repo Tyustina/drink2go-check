@@ -17,12 +17,18 @@ const nextButton = document.querySelector('.slider-button-next');
 
 let currentSlideIndex = 0;
 
+function updateButtons() {
+  prevButton.disabled = currentSlideIndex === 0;
+  nextButton.disabled = currentSlideIndex === slides.length - 1;
+}
+
 function showSlide(i, saveState = true) {
   slides.forEach(slide =>
     slide.classList.remove('new__item--action'));
 
     slides[i].classList.add('new__item--action');
     currentSlideIndex = i;
+    updateButtons();
 
     if(saveState) {
       history.pushState({slideIndex: i}, '', null);
