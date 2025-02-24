@@ -8,7 +8,6 @@
   }
 }
 
-
 .nav--opened .nav__list {
   @include m.onli-mobile {
     position: absolute;
@@ -23,14 +22,14 @@
 
 .nav__list {
   @include m.list-reset;
+  display: flex;
+  flex-wrap: wrap;
 
   @include m.onli-mobile {
+    gap: 3px;
     width: 100%;
     background-color: v.$base-white;
   }
-
-  display: flex;
-  flex-wrap: wrap;
 
   @include m.desktop {
     gap: 22px;
@@ -84,7 +83,6 @@
 
 .nav__toggle {
   border: none;
-  padding: 0;
   background-color: transparent;
   padding: 22px;
 }

@@ -14,10 +14,7 @@
 
   @include m.tablet {
     gap: 30px;
-    padding-top: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
+    padding: 50px 30px 30px;
     margin: 0;
   }
 }

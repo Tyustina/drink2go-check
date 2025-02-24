@@ -13,9 +13,11 @@
 .new__item {
   display: none;
   margin: 0 auto;
+
   @include m.tablet {
     margin-bottom: 175px;
   }
+
   @include m.desktop {
     margin: 0;
   }
@@ -80,6 +82,7 @@
     margin: 0;
   }
 }
+
 .new__heading {
   font-weight: 700;
   font-size: 36px;
@@ -148,6 +151,7 @@
     padding-right: 21px;
   }
 }
+
 .new__img {
   // width: 280px;
   // height: 280px;

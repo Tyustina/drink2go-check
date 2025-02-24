@@ -23,6 +23,7 @@
 .user-nav__button {
   text-decoration: none;
   padding: 22px;
+
   @include m.desktop {
     display: flex;
     gap: 8px;
@@ -50,6 +51,7 @@
   mask-repeat: no-repeat;
   mask-size: cover;
 }
+
 .user-nav__button--account:hover::before {
   background-color: v.$base-primary;
 }

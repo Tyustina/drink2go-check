@@ -2,6 +2,10 @@
 @use "../common/mixin.scss" as m;
 
 .header {
+  margin: 0 auto;
+}
+
+.header__wrapper {
   @include m.container;
   position: relative;
   display: flex;
@@ -10,7 +14,11 @@
   justify-content: space-between;
 
   @include m.tablet {
-    margin: 0;
+    width: 768px;
+  }
+
+  @include m.desktop {
+    width: 1440px;
   }
 }
 

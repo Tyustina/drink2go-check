@@ -96,7 +96,7 @@
 }
 
 .control__input[type="radio"]:checked:disabled + .control__marker::after {
-background-color: v.$light-grey;
+  background-color: v.$light-grey;
 }
 
 .control__input[type="radio"]:checked:hover + .control__marker::after {

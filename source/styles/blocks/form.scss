@@ -8,6 +8,11 @@
   padding-top: 22px;
   padding-left: 2px;
 
+  @include m.onli-mobile {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @include m.tablet {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px 30px;
@@ -71,13 +76,13 @@
 }
 
 .form__button[type="reset"] {
-  @include m.desktop{
-  padding: 8px 34px;
+  @include m.desktop {
+    padding: 8px 34px;
   }
 }
 
 .form__button[type="submit"] {
   @include m.desktop {
-  padding: 8px 26px;
+    padding: 8px 26px;
   }
 }

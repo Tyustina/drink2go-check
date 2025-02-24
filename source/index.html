@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="./favicons/web-app-manifest-512x512.png">
   <link rel="icon" type="image/png" sizes="192x192" href="./favicons/web-app-manifest-192x192.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
-  <link rel="stylesheet" href="vendor/nouislider.css">
+  <!-- <link rel="stylesheet" href="vendor/nouislider.css"> -->
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
   <script src="vendor/nouislider.js" defer></script>
@@ -23,6 +23,7 @@
 
 <body>
   <header class="header" data-test="header">
+    <div class="header__wrapper">
     <div class="header__logo">
       <div class="logo">
         <picture>
@@ -55,6 +56,7 @@
         <a class="user-nav__button user-nav__button--basket" href="#"><span class="user-nav__text ">Корзина</span></a>
       </li>
     </ul>
+  </div>
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
@@ -145,7 +147,7 @@
               <h3 class="new__heading">Тройной Эспрессо</h3>
               <p class="new__desc text">Мощнее укола адреналина, чернее самой тёмной ночи,<br class="text__br"> этот
                 тройной эспрессо из
-                Колумбии покажет вам, что такое<br class="text__br"> настоящая бодрость</p>
+                Колумбии покажет вам, что такое<br class="text__br">настоящая бодрость</p>
               <div class="new__price-wrapper">
                 <p class="new__price"><span class="new__price-delete">295&#8381;</span> 225&#8381;</p>
                 <button class="new__button button" type="button">Заказать</button>
@@ -208,11 +210,11 @@
               <div class="range__slider">
               </div>
               <div class="range__wrapper">
-                <label class="range__label"><input class="range__input range__input--min" type="number" value="0"
+                <label class="range__label"><input class="range__input range__input--min" type="number" placeholder="0"
                     min="0" max="900" name="min-price">
                 </label>
                 <p class="range__line"></p>
-                <label class="range__label"><input class="range__input range__input--max" type="number" value="900"
+                <label class="range__label"><input class="range__input range__input--max" type="number" placeholder="900"
                     min="0" max="900" name="max-price">
                 </label>
               </div>
@@ -274,8 +276,8 @@
               </ul>
             </fieldset>
             <div class="form__buttons">
-              <input class="form__button button" type="submit" value="Применить">
-              <input class="form__button button button--light" type="reset" name="reset" value="Сбросить">
+              <input class="form__button button" type="submit" name="submit" value="Применить">
+              <button class="form__button button button--light" type="reset">Сбросить</button>
             </div>
           </form>
           <ul class="catalog__list">
@@ -383,15 +385,14 @@
             </li>
           </ul>
           <ul class="catalog__numeration numeration">
-            <li><button type="button" class="numeration__button numeration__button--prev"> <span
+            <li><button class="numeration__button numeration__button--prev" type="button"><span
                   class="numeration__text">Назад</span></button></li>
-            <li><button type="button" class="numeration__button numeration__button--1">1</button></li>
-            <li><button type="button"
-                class="numeration__button numeration__button--2 numeration__button--activ">2</button>
+            <li><button class="numeration__button numeration__button--1" type="button" >1</button></li>
+            <li><button class="numeration__button numeration__button--2 numeration__button--activ" type="button">2</button>
             </li>
-            <li><button type="button" class="numeration__button numeration__button--3">3</button>
+            <li><button class="numeration__button numeration__button--3" type="button">3</button>
             </li>
-            <li><button type="button" class="numeration__button numeration__button--next"><span
+            <li><button class="numeration__button numeration__button--next" type="button"><span
                   class="numeration__text">Вперед</span></button></li>
           </ul>
         </div>

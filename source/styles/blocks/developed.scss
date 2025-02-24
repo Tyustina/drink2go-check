@@ -6,12 +6,13 @@
   display: flex;
   justify-content: center;
   padding-top: 8px;
+
   @include m.tablet {
     padding-top: 28px;
   }
+
   @include m.desktop {
     padding-top: 6px;
-
   }
 }
 
@@ -48,6 +49,7 @@
 .developed__link:focus {
   color: v.$base-primary;
 }
+
 .developed__link:hover::after {
   background: v.$base-primary;
 }

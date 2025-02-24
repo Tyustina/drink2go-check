@@ -2,47 +2,49 @@
 @use "../common/mixin.scss" as m;
 
 .range__slider {
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
+/* stylelint-disable*/
 .noUi-target {
-  width: 270px;
+  width: 278px;
   height: 2px;
   border: none;
   box-shadow: none;
   background-color: v.$light-grey;
 
-  @include m.tablet{
-    width: 213px;
+  @include m.tablet {
+    width: 221px;
   }
+
   @include m.desktop {
     width: 300px;
   }
 }
 
-.noUi-connect  {
+.noUi-connect {
   width: 100%;
   background-color: v.$primary-lighter;
-  // @include m.tablet {
-  //   width: 118px;
-  // }
-  // @include m.desktop {
-  //   width: 274px;
-  // }
 }
 
 .noUi-horizontal {
   height: 2px;
 }
+
 .noUi-horizontal .noUi-handle {
-  // right: -21px;
-  // top: -10px;
   width: 24px;
   height: 24px;
   background-color: v.$base-white;
   border-radius: 50%;
   border: 2px solid v.$primary-lighter;
   cursor: pointer;
+  right: -22px;
+  top: -12px;
+
+  @include m.tablet {
+    top: -11px;
+    right: -22px;
+  }
 }
 
 .noUi-handle::after {
@@ -60,36 +62,61 @@
   left: 2px;
 }
 
-.range__toggle:hover::before,
-.range__toggle:focus::before {
+.noUi-handle:disabled {
+  background-color: v.$base-grey;
+}
+
+.noUi-connect:disabled {
+  background-color: v.$base-grey;
+}
+
+.noUi-target:disabled {
+  background-color: v.$base-grey;
+}
+
+.noUi-handle:hover::before,
+.noUi-handle:focus::before {
   background-color: v.$primary-opacity-25;
 }
 
-.range__toggle:active::before {
+.noUi-handle:active::before {
   background-color: v.$base-primary;
 }
 
-
 .noUi-handle-upper {
-  left: 271px;
+  left: 261px;
 
   @include m.tablet {
-    left: 151px;
+    left: 199px;
   }
 
-  @include m.desktop{
+  @include m.desktop {
     left: 248px;
   }
 }
 
+.range__input::-webkit-outer-spin-button,
+.range__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.range__input[type='number'] {
+  -moz-appearance: textfield;
+}
+/* stylelint-enable*/
 .range__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 36px;
+  margin-top: 34px;
 
   @include m.tablet {
     margin-top: 32px;
   }
+}
+
+.range__input::placeholder {
+  color: v.$base-grey;
 }
 
 .range__input {
@@ -104,30 +131,18 @@
   line-height: 24px;
   text-align: center;
   appearance: none;
+  color: v.$base-black;
 
   @include m.tablet {
-    text-align: left;
-    padding-left: 18px;
+    padding-left: 8px;
     width: 87px;
     height: 40px;
   }
 
   @include m.desktop {
     width: 134px;
-  height: 40px;
+    height: 40px;
   }
-}
-
-.range__input::placeholder {
-  color: red;
-}
-
-.range__input--min {
-  color: v.$base-grey;
-}
-
-.range__input--max {
-  color: v.$base-black;
 }
 
 .range__line {
@@ -136,10 +151,9 @@
   width: 8px;
   height: 2px;
   background-color: v.$base-grey;
-  margin: auto 16px auto 0;
+  margin: auto 16px auto 8px;
 
   @include m.tablet {
     margin-right: 0;
   }
 }
-

@@ -4,7 +4,7 @@
 .sorter {
   position: absolute;
   display: flex;
-  gap: 18px;
+  gap: 6px;
   margin: 0;
   bottom: -69px;
   left: 2px;
@@ -20,31 +20,41 @@
 }
 
 .sorter__list {
+  position: relative;
+  display: flex;
   font-family: inherit;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   text-align: left;
-  border: none;
+  border: transparent;
+  border-radius: 4px;
   background-color: transparent;
   color: v.$base-primary;
+  padding: 4px 20px 4px 10px;
   margin: 0;
   appearance: none;
+  width: 165px;
+  height: 32px;
+  background-size: 10px 10px;
+  background-image: url("../../icons/arr-down.svg");
+  background-repeat: no-repeat;
+  background-position: 140px 12px;
 }
 
-// .sorter__list::after {
-//   position: absolute;
-//   content: "";
-//   display: block;
-//   width: 15px;
-//   height: 15px;
-//   background-image: url("../../icons/arrow.svg");
-//   right: 0;
-//   top: 0;
-// }
+.sorter__list:hover,
+.sorter__list:focus {
+  border-radius: 4px;
+  background-color: v.$base-secondary;
+}
 
+.sorter__list:active {
+  background-image: url("../../icons/arr-up.svg");
+}
 .sorter__title {
-  margin: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 4px;
 }
 
 .sorter__text {

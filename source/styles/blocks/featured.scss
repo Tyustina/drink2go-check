@@ -16,7 +16,6 @@
     padding-top: 102px;
     padding-bottom: 120px;
   }
-  outline: 1px solid red;
 }
 
 .featured__list {
@@ -79,6 +78,7 @@
 
 .featured__desc {
   padding-top: 4px;
+
   @include m.tablet {
     text-align: left;
     font-size: 16px;
@@ -104,7 +104,7 @@
 
   @include m.tablet {
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 4px;
   }
 

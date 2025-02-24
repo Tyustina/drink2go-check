@@ -5,6 +5,7 @@
   background-color: v.$lightest-grey;
   padding-top: 50px;
   padding-bottom: 44px;
+
   @include m.tablet {
     padding-top: 78px;
     padding-bottom: 90px;
